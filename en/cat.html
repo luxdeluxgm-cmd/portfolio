@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO & LOCALIZATION -->
+    <title>Jan Tokarzewski | Work in Progress</title>
+    <meta name="description" content="This section is currently under construction.">
+    <link rel="canonical" href="https://jantokarzewski.pl/">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cascadia+Code:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- PALETTE CONTROL -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        background: '#fafafa',
+                        textMain: '#111827',
+                        textMuted: '#4b5563',
+                        accent: '#8b5cf6', // Purple
+                        btnDark: '#ffffff',
+                        borderDark: '#111827'
+                    },
+                    fontFamily: {
+                        sans: ['"Cascadia Code"', 'monospace'],
+                        display: ['"Cascadia Code"', 'monospace'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        ::-webkit-scrollbar { width: 12px; }
+        ::-webkit-scrollbar-track { background: #fafafa; border-left: 4px solid #111827; }
+        ::-webkit-scrollbar-thumb { background: #111827; }
+        ::-webkit-scrollbar-thumb:hover { background: #8b5cf6; border: 2px solid #111827; }
+    </style>
+</head>
+<body class="bg-background text-textMain font-sans antialiased flex flex-col min-h-screen">
+
+    <!-- Navigation -->
+    <nav class="w-full py-6 px-6 sm:px-12 flex justify-between items-center max-w-6xl mx-auto border-b-4 border-textMain bg-background sticky top-0 z-50 shadow-sm">
+        <a href="index.html" class="font-display text-2xl font-bold hover:bg-accent px-2 transition-none">Jan Tokarzewski</a>
+    </nav>
+
+    <!-- Main Content: Work in Progress Sign -->
+    <main class="flex-grow flex flex-col items-center justify-center w-full px-6 py-24 max-w-6xl mx-auto">
+        <div class="w-full bg-btnDark border-4 border-textMain p-10 sm:p-16 shadow-[8px_8px_0px_0px_#111827] text-center max-w-2xl mx-auto space-y-8">
+                <img src="https://images.pexels.com/photos/35327568/pexels-photo-35327568.jpeg">
+            <div>
+                <a href="index.html" class="inline-block bg-btnDark border-4 border-textMain text-textMain px-8 py-4 font-bold text-lg shadow-[4px_4px_0px_0px_#111827] hover:bg-accent transition-none">
+                    ← Back to Hub
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full py-8 text-center border-t-4 border-textMain bg-textMain text-background mt-auto">
+        <p class="font-bold">© 2026 Jan Tokarzewski.</p>
+    </footer>
+
+</body>
+</html>

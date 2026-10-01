@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth scroll-pt-32">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO & LOCALIZATION -->
+    <title>Jan Tokarzewski | Media & Translation Services</title>
+    <meta name="description" content="Video editing, subtitling, and EN/PL translations.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cascadia+Code:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- PALETTE CONTROL -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        background: '#fafafa',
+                        textMain: '#111827',
+                        textMuted: '#4b5563',
+                        accent: '#8b5cf6', // Purple
+                        btnDark: '#ffffff',
+                        borderDark: '#111827'
+                    },
+                    fontFamily: {
+                        sans: ['"Cascadia Code"', 'monospace'],
+                        display: ['"Cascadia Code"', 'monospace'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        ::-webkit-scrollbar { width: 12px; }
+        ::-webkit-scrollbar-track { background: #fafafa; border-left: 4px solid #111827; }
+        ::-webkit-scrollbar-thumb { background: #111827; }
+        ::-webkit-scrollbar-thumb:hover { background: #8b5cf6; border: 2px solid #111827; }
+    </style>
+</head>
+<body class="bg-background text-textMain font-sans antialiased flex flex-col min-h-screen">
+
+    <!-- Navigation -->
+    <nav class="w-full py-6 px-6 sm:px-12 flex justify-between items-center max-w-6xl mx-auto border-b-4 border-textMain bg-background sticky top-0 z-50 shadow-sm">
+        <a href="index.html" class="font-display text-2xl font-bold hover:bg-accent px-2 transition-none">← Back to Hub</a>
+        <div class="font-bold text-lg hidden sm:block">
+            Media & Translation
+        </div>
+    </nav>
+
+    <main class="flex-grow flex flex-col w-full px-6 py-12 max-w-6xl mx-auto space-y-20">
+
+        <!-- Branch Hero -->
+        <section class="w-full bg-btnDark border-4 border-textMain p-8 sm:p-12 shadow-[8px_8px_0px_0px_#111827] text-center sm:text-left">
+            <h1 class="text-4xl sm:text-6xl font-bold uppercase tracking-tight mb-6">
+                Video Editing & Translation.
+            </h1>
+            <p class="text-xl text-textMuted leading-relaxed max-w-3xl mb-8">
+                I edit short-form videos for social media and translate text between English and Polish. No corporate fluff, just clean cuts and accurate wording.
+            </p>
+            <a href="#contact" class="inline-block bg-accent border-4 border-textMain text-textMain px-8 py-4 font-bold text-lg shadow-[4px_4px_0px_0px_#111827] hover:bg-textMain hover:text-white transition-none">
+                Start a Project
+            </a>
+        </section>
+
+        <!-- Services Showcase Rows -->
+        <section id="work" class="w-full">
+            <div class="mb-10 border-b-4 border-textMain pb-4">
+                <h2 class="text-4xl font-bold">Services & Samples</h2>
+            </div>
+
+            <!-- Row 1: Video Editing -->
+            <div class="bg-btnDark border-4 border-textMain p-6 sm:p-8 shadow-[8px_8px_0px_0px_#111827] flex flex-col lg:flex-row gap-8 mb-12">
+                <div class="w-full lg:w-1/2 border-4 border-textMain overflow-hidden shadow-[4px_4px_0px_0px_#111827] bg-[#e5e7eb] flex items-center justify-center min-h-[260px] sm:min-h-[340px]">
+                    <img src="https://placehold.co/600x400/fafafa/111827?text=Short-Form+Video" alt="Video Editing" class="w-full h-full object-cover">
+                </div>
+                <div class="w-full lg:w-1/2 flex flex-col justify-center text-left">
+                    <div class="inline-block bg-accent border-2 border-textMain px-3 py-1 font-bold text-xs shadow-[2px_2px_0px_0px_#111827] uppercase tracking-wider w-max mb-4">
+                        Video Editing
+                    </div>
+                    <h3 class="text-3xl font-bold mb-4">Short-Form Video</h3>
+                    <p class="text-lg text-textMuted leading-relaxed mb-8">
+                        Clean, fast-paced editing for TikTok, Reels, and Shorts. I cut the dead air, sync the audio, and add proper captions.
+                    </p>
+                    <div class="flex flex-wrap gap-4 font-bold mt-auto">
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="bg-accent border-4 border-textMain text-textMain px-6 py-3 shadow-[4px_4px_0px_0px_#111827] hover:bg-textMain hover:text-white transition-none">
+                            Watch Example ↗
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row 2: Translation -->
+            <div class="bg-btnDark border-4 border-textMain p-6 sm:p-8 shadow-[8px_8px_0px_0px_#111827] flex flex-col lg:flex-row gap-8 mb-12">
+                <div class="w-full lg:w-1/2 border-4 border-textMain overflow-hidden shadow-[4px_4px_0px_0px_#111827] bg-[#e5e7eb] flex items-center justify-center min-h-[260px] sm:min-h-[340px]">
+                    <img src="https://placehold.co/600x400/fafafa/111827?text=Document+Translation" alt="Translation" class="w-full h-full object-cover">
+                </div>
+                <div class="w-full lg:w-1/2 flex flex-col justify-center text-left">
+                    <div class="inline-block bg-accent border-2 border-textMain px-3 py-1 font-bold text-xs shadow-[2px_2px_0px_0px_#111827] uppercase tracking-wider w-max mb-4">
+                        Translation
+                    </div>
+                    <h3 class="text-3xl font-bold mb-4">EN/PL Translation</h3>
+                    <p class="text-lg text-textMuted leading-relaxed mb-8">
+                        English to Polish and Polish to English. From technical documentation and website copy to simple business emails.
+                    </p>
+                    <div class="flex flex-wrap gap-4 font-bold mt-auto">
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="bg-accent border-4 border-textMain text-textMain px-6 py-3 shadow-[4px_4px_0px_0px_#111827] hover:bg-textMain hover:text-white transition-none">
+                            Read Sample ↗
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row 3: Subtitling -->
+            <div class="bg-btnDark border-4 border-textMain p-6 sm:p-8 shadow-[8px_8px_0px_0px_#111827] flex flex-col lg:flex-row gap-8">
+                <div class="w-full lg:w-1/2 border-4 border-textMain overflow-hidden shadow-[4px_4px_0px_0px_#111827] bg-[#e5e7eb] flex items-center justify-center min-h-[260px] sm:min-h-[340px]">
+                    <img src="https://placehold.co/600x400/fafafa/111827?text=Manual+Subtitles" alt="Subtitling" class="w-full h-full object-cover">
+                </div>
+                <div class="w-full lg:w-1/2 flex flex-col justify-center text-left">
+                    <div class="inline-block bg-accent border-2 border-textMain px-3 py-1 font-bold text-xs shadow-[2px_2px_0px_0px_#111827] uppercase tracking-wider w-max mb-4">
+                        Media
+                    </div>
+                    <h3 class="text-3xl font-bold mb-4">Manual Subtitling</h3>
+                    <p class="text-lg text-textMuted leading-relaxed mb-8">
+                        Properly synced closed captions. I fix the mistakes that auto-generators make so your text actually matches the audio.
+                    </p>
+                    <div class="flex flex-wrap gap-4 font-bold mt-auto">
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="bg-accent border-4 border-textMain text-textMain px-6 py-3 shadow-[4px_4px_0px_0px_#111827] hover:bg-textMain hover:text-white transition-none">
+                            Watch Example ↗
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Simplified Pricing Note -->
+        <section id="pricing" class="w-full">
+            <h2 class="text-4xl font-bold mb-10 border-b-4 border-textMain pb-4">Pricing</h2>
+            <div class="bg-btnDark border-4 border-textMain p-8 sm:p-12 shadow-[8px_8px_0px_0px_#111827] text-textMain font-bold text-xl sm:text-2xl leading-relaxed">
+                Rates start at <span class="bg-accent border-4 border-textMain px-3 py-1 mx-1 shadow-[2px_2px_0px_0px_#111827]">$15</span> for simple document translations or a basic short-form video edit. <br><br>
+                Pricing scales depending on the length of the raw footage or the word count of the document. Reach out below with a sample of your file to get an exact quote.
+            </div>
+        </section>
+
+        <!-- Direct Contact Section -->
+        <section id="contact" class="w-full bg-btnDark border-4 border-textMain p-8 sm:p-12 shadow-[8px_8px_0px_0px_#111827]">
+
+            <h2 class="text-4xl font-bold mb-4">Let's talk.</h2>
+            <p class="text-xl text-textMuted mb-6 max-w-2xl">Send me a quick message explaining what you need done, or reach out via any platform below.</p>
+
+            <!-- B2B Invoice Badge -->
+            <div class="bg-background border-4 border-textMain px-4 py-2 text-sm sm:text-base font-bold shadow-[4px_4px_0px_0px_#111827] flex items-center gap-3 w-max mb-12">
+                <span class="w-3 h-3 bg-accent border-2 border-textMain block"></span>
+                B2B VAT Invoices Available (via Useme)
+            </div>
+
+            <!-- Email Form (Top) -->
+            <form id="contact-form" action="https://formspree.io/f/mqpayjbj" method="POST" class="flex flex-col gap-4 mb-16 max-w-3xl">
+                <input type="text" name="name" placeholder="Your Name or Username" required class="bg-background border-4 border-textMain p-4 font-bold outline-none focus:bg-white transition-none">
+                <input type="email" name="email" placeholder="Email Address" required class="bg-background border-4 border-textMain p-4 font-bold outline-none focus:bg-white transition-none">
+                <textarea name="message" rows="4" placeholder="What task do you need taken off your plate?" required class="bg-background border-4 border-textMain p-4 font-bold outline-none focus:bg-white transition-none resize-none"></textarea>
+                <!-- Primary Action: Purple -> Black -->
+                <button id="submit-btn" type="submit" class="bg-accent border-4 border-textMain text-white font-bold text-lg px-8 py-4 shadow-[4px_4px_0px_0px_#111827] hover:bg-textMain hover:text-white transition-none self-start">
+                    Send Message
+                </button>
+            </form>
+
+            <!-- Communication Hub Grid (Bottom) -->
+            <div class="w-full border-t-4 border-textMain pt-10">
+                <div class="font-display text-xl tracking-wide text-textMain uppercase mb-8 font-bold">
+                    Direct Channels & Platforms
+                </div>
+
+                <!-- Changed to lg:grid-cols-4 for a perfect fit -->
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 w-full">
+
+                    <!-- 1. Phone -->
+                    <div class="relative group w-full h-full">
+                        <a href="tel:+48000000000" class="w-full h-full bg-btnDark border-4 border-textMain hover:bg-accent p-4 flex flex-col items-center justify-center transition-none shadow-[4px_4px_0px_0px_#111827]">
+                            <span class="font-display text-xl font-bold">Phone</span>
+                            <span class="text-xs font-sans mt-1">Direct call</span>
+                        </a>
+                        <div class="absolute -top-14 left-1/2 -translate-x-1/2 px-4 py-2 bg-background border-4 border-textMain text-sm font-sans font-bold text-textMain whitespace-nowrap hidden group-hover:flex items-center gap-2 shadow-[4px_4px_0px_0px_#111827] z-20">
+                            <span class="w-3 h-3 border-2 border-textMain bg-accent"></span>
+                            <span>+48 000 000 000</span>
+                        </div>
+                    </div>
+
+                    <!-- 2. Email -->
+                    <div class="relative group w-full h-full">
+                        <button onclick="copyEmail()" class="w-full h-full bg-btnDark border-4 border-textMain hover:bg-accent p-4 flex flex-col items-center justify-center transition-none shadow-[4px_4px_0px_0px_#111827]">
+                            <span class="font-display text-xl font-bold">Email</span>
+                            <span id="email-grid-text" class="text-xs font-sans mt-1">Click to copy</span>
+                        </button>
+                        <div class="absolute -top-14 left-1/2 -translate-x-1/2 px-4 py-2 bg-background border-4 border-textMain text-sm font-sans font-bold text-textMain whitespace-nowrap hidden group-hover:flex items-center gap-2 shadow-[4px_4px_0px_0px_#111827] z-20">
+                            <span class="w-3 h-3 border-2 border-textMain bg-accent"></span>
+                            <span>catnipattic@gmail.com</span>
+                        </div>
+                    </div>
+
+                    <!-- 3. Reddit -->
+                    <div class="relative group w-full h-full">
+                        <a href="https://www.reddit.com/user/Aggressive_Bed3169/" target="_blank" rel="noopener noreferrer" class="w-full h-full bg-btnDark border-4 border-textMain hover:bg-accent p-4 flex flex-col items-center justify-center transition-none shadow-[4px_4px_0px_0px_#111827]">
+                            <span class="font-display text-xl font-bold">Reddit</span>
+                            <span class="text-xs font-sans mt-1">My profile</span>
+                        </a>
+                        <div class="absolute -top-14 left-1/2 -translate-x-1/2 px-4 py-2 bg-background border-4 border-textMain text-sm font-sans font-bold text-textMain whitespace-nowrap hidden group-hover:flex items-center gap-2 shadow-[4px_4px_0px_0px_#111827] z-20">
+                            <span class="w-3 h-3 border-2 border-textMain bg-accent"></span>
+                            <span>u/AggressiveBed</span>
+                        </div>
+                    </div>
+
+                    <!-- 4. Escrow / Useme -->
+                    <div class="relative group w-full h-full">
+                        <a href="https://useme.com/pl/roles/contractor/catnipattic,704217/" target="_blank" rel="noopener noreferrer" class="w-full h-full bg-btnDark border-4 border-textMain hover:bg-accent p-4 flex flex-col items-center justify-center transition-none shadow-[4px_4px_0px_0px_#111827]">
+                            <span class="font-display text-xl font-bold">Useme</span>
+                            <span class="text-xs font-sans mt-1">B2B Invoice</span>
+                        </a>
+                        <div class="absolute -top-14 left-1/2 -translate-x-1/2 px-4 py-2 bg-background border-4 border-textMain text-sm font-sans font-bold text-textMain whitespace-nowrap hidden group-hover:flex items-center gap-2 shadow-[4px_4px_0px_0px_#111827] z-20">
+                            <span class="w-3 h-3 border-2 border-textMain bg-accent"></span>
+                            <span>Verified Escrow</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full py-8 text-center border-t-4 border-textMain bg-textMain text-background mt-auto">
+        <p class="font-bold">© 2026 Jan Tokarzewski<a href="cat.html" class="hover:text-accent transition-none">.</a></p>
+    </footer>
+
+    <!-- Scripts (Form/Email ONLY) -->
+    <script>
+        // --- EMAIL COPY LOGIC ---
+        const contactEmail = "catnipattic@gmail.com";
+        function copyEmail() {
+            navigator.clipboard.writeText(contactEmail).then(() => {
+                const textSpan = document.getElementById('email-grid-text');
+                const originalText = textSpan.textContent;
+                textSpan.textContent = "Copied!";
+                setTimeout(() => { textSpan.textContent = originalText; }, 2000);
+            }).catch(() => {
+                window.location.href = `mailto:${contactEmail}`;
+            });
+        }
+
+        // --- FORMSPREE NO-REDIRECT LOGIC ---
+        const contactForm = document.getElementById('contact-form');
+        const submitBtn = document.getElementById('submit-btn');
+
+        contactForm.addEventListener('submit', async function(e) {
+            e.preventDefault();
+
+            const originalBtnText = submitBtn.textContent;
+            submitBtn.textContent = "Sending...";
+
+            const formData = new FormData(contactForm);
+
+            try {
+                const response = await fetch(contactForm.action, {
+                    method: contactForm.method,
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+
+                if (response.ok) {
+                    submitBtn.textContent = "Message Sent!";
+                    submitBtn.classList.remove('bg-accent', 'hover:bg-textMain', 'hover:text-white');
+                    submitBtn.classList.add('bg-textMain', 'text-white', 'pointer-events-none');
+                    contactForm.reset();
+                } else {
+                    submitBtn.textContent = "Error. Try again.";
+                    setTimeout(() => { submitBtn.textContent = originalBtnText; }, 3000);
+                }
+            } catch (error) {
+                submitBtn.textContent = "Error. Try again.";
+                setTimeout(() => { submitBtn.textContent = originalBtnText; }, 3000);
+            }
+        });
+    </script>
+</body>
+</html>

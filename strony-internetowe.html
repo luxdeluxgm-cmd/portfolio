@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pl" class="scroll-smooth scroll-pt-32">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO & LOCALIZATION -->
+    <title>Jan Tokarzewski | Strony Internetowe i CMS</title>
+    <meta name="description" content="Autorskie, błyskawiczne strony internetowe i rozwiązania CMS dla lokalnych firm.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cascadia+Code:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- PALETTE CONTROL -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        background: '#fafafa',
+                        textMain: '#111827',
+                        textMuted: '#4b5563',
+                        accent: '#8b5cf6', // Purple
+                        btnDark: '#ffffff',
+                        borderDark: '#111827'
+                    },
+                    fontFamily: {
+                        sans: ['"Cascadia Code"', 'monospace'],
+                        display: ['"Cascadia Code"', 'monospace'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        ::-webkit-scrollbar { width: 12px; }
+        ::-webkit-scrollbar-track { background: #fafafa; border-left: 4px solid #111827; }
+        ::-webkit-scrollbar-thumb { background: #111827; }
+        ::-webkit-scrollbar-thumb:hover { background: #8b5cf6; border: 2px solid #111827; }
+    </style>
+</head>
+<body class="bg-background text-textMain font-sans antialiased flex flex-col min-h-screen">
+
+    <!-- Navigation -->
+    <nav class="w-full py-6 px-6 sm:px-12 flex justify-between items-center max-w-6xl mx-auto border-b-4 border-textMain bg-background sticky top-0 z-50 shadow-sm">
+        <a href="index.html" class="font-display text-2xl font-bold hover:bg-accent px-2 transition-none">← Powrót</a>
+        <div class="font-bold text-lg hidden sm:block">
+            Strony Internetowe
+        </div>
+    </nav>
+
+    <main class="flex-grow flex flex-col w-full px-6 py-12 max-w-6xl mx-auto space-y-20">
+
+        <!-- Branch Hero -->
+        <section class="w-full bg-btnDark border-4 border-textMain p-8 sm:p-12 shadow-[8px_8px_0px_0px_#111827] text-center sm:text-left">
+            <h1 class="text-4xl sm:text-6xl font-bold uppercase tracking-tight mb-6">
+                Strony, które faktycznie się ładują.
+            </h1>
+            <p class="text-xl text-textMuted leading-relaxed max-w-3xl mb-8">
+                Przestań płacić agencjom za ociężałe szablony WordPressa, które na telefonie otwierają się 10 sekund. Buduję szybkie, lekkie i nowoczesne strony, skrojone idealnie pod Twój biznes.
+            </p>
+            <a href="#contact" class="inline-block bg-accent border-4 border-textMain text-textMain px-8 py-4 font-bold text-lg shadow-[4px_4px_0px_0px_#111827] hover:bg-textMain hover:text-white transition-none">
+                Rozpocznij projekt
+            </a>
+        </section>
+
+        <!-- Live Demos / Swappable Showcase -->
+        <section id="work" class="w-full">
+            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-end mb-10 border-b-4 border-textMain pb-4 gap-4">
+                <h2 class="text-4xl font-bold">Wybrane realizacje</h2>
+
+                <!-- Slider Controls -->
+                <div class="flex items-center gap-3">
+                    <span id="demo-counter" class="font-bold text-lg px-2">01 / 03</span>
+                    <button onclick="prevProject()" aria-label="Poprzedni projekt" class="w-12 h-12 flex justify-center items-center bg-btnDark border-4 border-textMain shadow-[4px_4px_0px_0px_#111827] hover:bg-accent active:translate-x-1 active:translate-y-1 transition-none font-bold text-xl cursor-pointer">
+                        ←
+                    </button>
+                    <button onclick="nextProject()" aria-label="Następny projekt" class="w-12 h-12 flex justify-center items-center bg-btnDark border-4 border-textMain shadow-[4px_4px_0px_0px_#111827] hover:bg-accent active:translate-x-1 active:translate-y-1 transition-none font-bold text-xl cursor-pointer">
+                        →
+                    </button>
+                </div>
+            </div>
+
+            <!-- Swappable Project Card -->
+            <div class="bg-btnDark border-4 border-textMain p-6 sm:p-8 shadow-[8px_8px_0px_0px_#111827] flex flex-col lg:flex-row gap-8">
+                <!-- Screenshot Left -->
+                <div class="w-full lg:w-1/2 border-4 border-textMain overflow-hidden shadow-[4px_4px_0px_0px_#111827] bg-[#e5e7eb] flex items-center justify-center min-h-[260px] sm:min-h-[340px]">
+                    <img id="demo-img" src="https://placehold.co/600x400/fafafa/111827?text=Landing+Page+Kliniki" alt="Zrzut ekranu projektu" class="w-full h-full object-cover">
+                </div>
+
+                <!-- Details Right -->
+                <div class="w-full lg:w-1/2 flex flex-col justify-center text-left">
+                    <div id="demo-badge" class="inline-block bg-accent border-2 border-textMain px-3 py-1 font-bold text-xs shadow-[2px_2px_0px_0px_#111827] uppercase tracking-wider w-max mb-4">
+                        Medycyna i Zdrowie
+                    </div>
+                    <h3 id="demo-title" class="text-3xl font-bold mb-4">Warszawski Gabinet Stomatologiczny</h3>
+                    <p id="demo-desc" class="text-lg text-textMuted leading-relaxed mb-8">
+                        Błyskawiczny landing page (one-pager) zastępujący ociężałą instalację WordPressa. Czas ładowania poniżej 0.5s, wyraźny przycisk "zadzwoń" na urządzeniach mobilnych i lekki system rezerwacji wizyt.
+                    </p>
+                    <div class="flex flex-wrap gap-4 font-bold mt-auto">
+                        <a id="demo-live" href="#" target="_blank" rel="noopener noreferrer" class="bg-accent border-4 border-textMain text-textMain px-6 py-3 shadow-[4px_4px_0px_0px_#111827] hover:bg-textMain hover:text-white transition-none">
+                            Zobacz na żywo ↗
+                        </a>
+                        <a id="demo-code" href="#" target="_blank" rel="noopener noreferrer" class="bg-background border-4 border-textMain text-textMain px-6 py-3 shadow-[4px_4px_0px_0px_#111827] hover:bg-accent transition-none">
+                            Kod źródłowy
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Simplified Pricing Note -->
+        <section id="pricing" class="w-full">
+            <h2 class="text-4xl font-bold mb-10 border-b-4 border-textMain pb-4">Cennik</h2>
+            <div class="bg-btnDark border-4 border-textMain p-8 sm:p-12 shadow-[8px_8px_0px_0px_#111827] text-textMain font-bold text-xl sm:text-2xl leading-relaxed">
+                Standardowa, autorska strona internetowa kosztuje <span class="bg-accent border-4 border-textMain px-3 py-1 mx-1 shadow-[2px_2px_0px_0px_#111827]">499 PLN</span>. <br><br>
+                W tej cenie otrzymujesz projekt, napisanie kodu i gwarancję, że strona załaduje się błyskawicznie na każdym telefonie. Jeśli potrzebujesz czegoś większego, np. złożonego sklepu e-commerce lub potężnej aplikacji webowej, koszt rośnie proporcjonalnie do zakresu prac, napisz do mnie i powiedz, czego potrzebujesz.
+            </div>
+        </section>
+
+        <!-- Direct Contact Section -->
+        <section id="contact" class="w-full bg-btnDark border-4 border-textMain p-8 sm:p-12 shadow-[8px_8px_0px_0px_#111827]">
+
+            <h2 class="text-4xl font-bold mb-4">Porozmawiajmy.</h2>
+            <p class="text-xl text-textMuted mb-6 max-w-2xl">Opisz krótko zadanie, z którym masz problem, lub skontaktuj się bezpośrednio poniżej.</p>
+
+            <!-- B2B Invoice Badge -->
+            <div class="bg-background border-4 border-textMain px-4 py-2 text-sm sm:text-base font-bold shadow-[4px_4px_0px_0px_#111827] flex items-center gap-3 w-max mb-12">
+                <span class="w-3 h-3 bg-accent border-2 border-textMain block"></span>
+                Wystawiam faktury VAT
+            </div>
+
+            <!-- Email Form (Top) -->
+            <form id="contact-form" action="https://formspree.io/f/mqpayjbj" method="POST" class="flex flex-col gap-4 mb-16 max-w-3xl">
+                <input type="text" name="name" placeholder="Twoje imię, nazwisko lub nazwa firmy" required class="bg-background border-4 border-textMain p-4 font-bold outline-none focus:bg-white transition-none">
+                <input type="email" name="email" placeholder="Adres e-mail" required class="bg-background border-4 border-textMain p-4 font-bold outline-none focus:bg-white transition-none">
+                <textarea name="message" rows="4" placeholder="W czym mogę Ci dzisiaj pomóc?" required class="bg-background border-4 border-textMain p-4 font-bold outline-none focus:bg-white transition-none resize-none"></textarea>
+                <!-- Primary Action: Purple -> Black -->
+                <button id="submit-btn" type="submit" class="bg-accent border-4 border-textMain text-white font-bold text-lg px-8 py-4 shadow-[4px_4px_0px_0px_#111827] hover:bg-textMain hover:text-white transition-none self-start">
+                    Wyślij wiadomość
+                </button>
+            </form>
+
+            <!-- Communication Hub Grid (Bottom) -->
+            <div class="w-full border-t-4 border-textMain pt-10">
+                <div class="font-display text-xl tracking-wide text-textMain uppercase mb-8 font-bold">
+                    Bezpośredni Kontakt
+                </div>
+
+                <!-- Changed to lg:grid-cols-3 and removed Reddit for B2B professionalism -->
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 w-full">
+
+                    <!-- 1. Phone -->
+                    <div class="relative group w-full h-full">
+                        <a href="tel:+48000000000" class="w-full h-full bg-btnDark border-4 border-textMain hover:bg-accent p-4 flex flex-col items-center justify-center transition-none shadow-[4px_4px_0px_0px_#111827]">
+                            <span class="font-display text-xl font-bold">Telefon</span>
+                            <span class="text-xs font-sans mt-1">Zadzwoń bezpośrednio</span>
+                        </a>
+                        <div class="absolute -top-14 left-1/2 -translate-x-1/2 px-4 py-2 bg-background border-4 border-textMain text-sm font-sans font-bold text-textMain whitespace-nowrap hidden group-hover:flex items-center gap-2 shadow-[4px_4px_0px_0px_#111827] z-20">
+                            <span class="w-3 h-3 border-2 border-textMain bg-accent"></span>
+                            <span>+48 000 000 000</span>
+                        </div>
+                    </div>
+
+                    <!-- 2. Email -->
+                    <div class="relative group w-full h-full">
+                        <button onclick="copyEmail()" class="w-full h-full bg-btnDark border-4 border-textMain hover:bg-accent p-4 flex flex-col items-center justify-center transition-none shadow-[4px_4px_0px_0px_#111827]">
+                            <span class="font-display text-xl font-bold">E-mail</span>
+                            <span id="email-grid-text" class="text-xs font-sans mt-1">Kliknij, by skopiować</span>
+                        </button>
+                        <div class="absolute -top-14 left-1/2 -translate-x-1/2 px-4 py-2 bg-background border-4 border-textMain text-sm font-sans font-bold text-textMain whitespace-nowrap hidden group-hover:flex items-center gap-2 shadow-[4px_4px_0px_0px_#111827] z-20">
+                            <span class="w-3 h-3 border-2 border-textMain bg-accent"></span>
+                            <span>tokarzewski.jan@outlook.com</span>
+                        </div>
+                    </div>
+
+                    <!-- 3. Escrow / Useme -->
+                    <div class="relative group w-full h-full">
+                        <a href="https://useme.com/pl/roles/contractor/jantokarzewski,704217/" target="_blank" rel="noopener noreferrer" class="w-full h-full bg-btnDark border-4 border-textMain hover:bg-accent p-4 flex flex-col items-center justify-center transition-none shadow-[4px_4px_0px_0px_#111827]">
+                            <span class="font-display text-xl font-bold">Useme</span>
+                            <span class="text-xs font-sans mt-1">Rozliczenia B2B</span>
+                        </a>
+                        <div class="absolute -top-14 left-1/2 -translate-x-1/2 px-4 py-2 bg-background border-4 border-textMain text-sm font-sans font-bold text-textMain whitespace-nowrap hidden group-hover:flex items-center gap-2 shadow-[4px_4px_0px_0px_#111827] z-20">
+                            <span class="w-3 h-3 border-2 border-textMain bg-accent"></span>
+                            <span>Zweryfikowany profil</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full py-8 text-center border-t-4 border-textMain bg-textMain text-background mt-auto">
+        <p class="font-bold">© 2026 Jan Tokarzewski<a href="cat.html" class="hover:text-accent transition-none">.</a></p>
+    </footer>
+
+    <!-- Scripts (Slider + Form/Email) -->
+    <script>
+        // --- SLIDER LOGIC ---
+        const projects = [
+            {
+                badge: "Medycyna i Zdrowie",
+                title: "Warszawski Gabinet Stomatologiczny",
+                desc: "Błyskawiczny landing page (one-pager) zastępujący ociężałą instalację WordPressa. Czas ładowania poniżej 0.5s, wyraźny przycisk kontaktu na urządzeniach mobilnych i lekki system rezerwacji wizyt.",
+                img: "https://placehold.co/600x400/fafafa/111827?text=Landing+Page+Kliniki",
+                liveUrl: "#",
+                codeUrl: "#"
+            },
+            {
+                badge: "Motoryzacja",
+                title: "Portal AutoSerwisu",
+                desc: "Strona nastawiona na konwersję stworzona dla niezależnego warsztatu samochodowego. Zawiera przejrzysty cennik usług, szybką integrację z mapami dojazdu i bezpośrednie przekierowanie na WhatsApp/telefon.",
+                img: "https://placehold.co/600x400/fafafa/111827?text=Strona+Warsztatu",
+                liveUrl: "#",
+                codeUrl: "#"
+            },
+            {
+                badge: "Sport i Społeczność",
+                title: "Sklep Lokalnego Klubu Piłkarskiego",
+                desc: "Lekki sklep internetowy i centrum meczowe dla lokalnego klubu sportowego. Czytelny asortyment, zintegrowany terminarz spotkań oraz płatności mobilne obsługiwane przez system PayU / BLIK.",
+                img: "https://placehold.co/600x400/fafafa/111827?text=Sklep+Klubu",
+                liveUrl: "#",
+                codeUrl: "#"
+            }
+        ];
+
+        let currentIndex = 0;
+
+        function updateSlide() {
+            const p = projects[currentIndex];
+            document.getElementById('demo-badge').textContent = p.badge;
+            document.getElementById('demo-title').textContent = p.title;
+            document.getElementById('demo-desc').textContent = p.desc;
+            document.getElementById('demo-img').src = p.img;
+            document.getElementById('demo-live').href = p.liveUrl;
+            document.getElementById('demo-code').href = p.codeUrl;
+            document.getElementById('demo-counter').textContent = `0${currentIndex + 1} / 0${projects.length}`;
+        }
+
+        function nextProject() {
+            currentIndex = (currentIndex + 1) % projects.length;
+            updateSlide();
+        }
+
+        function prevProject() {
+            currentIndex = (currentIndex - 1 + projects.length) % projects.length;
+            updateSlide();
+        }
+
+        // --- EMAIL COPY LOGIC ---
+        const contactEmail = "tokarzewski.jan@outlook.com";
+        function copyEmail() {
+            navigator.clipboard.writeText(contactEmail).then(() => {
+                const textSpan = document.getElementById('email-grid-text');
+                const originalText = textSpan.textContent;
+                textSpan.textContent = "Skopiowano!";
+                setTimeout(() => { textSpan.textContent = originalText; }, 2000);
+            }).catch(() => {
+                window.location.href = `mailto:${contactEmail}`;
+            });
+        }
+
+        // --- FORMSPREE NO-REDIRECT LOGIC ---
+        const contactForm = document.getElementById('contact-form');
+        const submitBtn = document.getElementById('submit-btn');
+
+        contactForm.addEventListener('submit', async function(e) {
+            e.preventDefault(); // Stops the page from redirecting
+
+            const originalBtnText = submitBtn.textContent;
+            submitBtn.textContent = "Wysyłanie...";
+
+            const formData = new FormData(contactForm);
+
+            try {
+                const response = await fetch(contactForm.action, {
+                    method: contactForm.method,
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+
+                if (response.ok) {
+                    // Success state: turns the button black and locks it
+                    submitBtn.textContent = "Wiadomość wysłana!";
+                    submitBtn.classList.remove('bg-accent', 'hover:bg-textMain', 'hover:text-white');
+                    submitBtn.classList.add('bg-textMain', 'text-white', 'pointer-events-none');
+                    contactForm.reset();
+                } else {
+                    submitBtn.textContent = "Błąd. Spróbuj ponownie.";
+                    setTimeout(() => { submitBtn.textContent = originalBtnText; }, 3000);
+                }
+            } catch (error) {
+                submitBtn.textContent = "Błąd. Spróbuj ponownie.";
+                setTimeout(() => { submitBtn.textContent = originalBtnText; }, 3000);
+            }
+        });
+    </script>
+</body>
+</html>
