@@ -1,6 +1,6 @@
 # Jan Tokarzewski – Personal Portfolio
 
-A custom-coded, lightweight, and brutalist personal website and service portal. Built for speed and simplicity without heavy frameworks or bloated CMS templates.
+A custom-coded and lightweight personal website and service portal. Built for simplicity without heavy frameworks or bloated CMS templates.
 
 ## Tech Stack
 * **HTML5**
