@@ -133,7 +133,7 @@
                         <span>B2B Invoices Available (via Useme)</span>
                     </div>
 
-                    <form id="contact-form" action="https://formspree.io/f/mqpayjbj" method="POST" class="flex flex-col gap-4 w-full">
+                    <form id="contact-form" action="https://formspree.io/f/myezrvpp" method="POST" class="flex flex-col gap-4 w-full">
                         <input type="text" name="name" placeholder="Your Name or Username" required class="w-full bg-background border-4 border-textMain p-4 font-bold outline-none focus:bg-white transition-none">
                         <input type="email" name="email" placeholder="Email Address" required class="w-full bg-background border-4 border-textMain p-4 font-bold outline-none focus:bg-white transition-none">
                         <textarea name="message" rows="4" placeholder="What task do you need taken off your plate?" required class="w-full bg-background border-4 border-textMain p-4 font-bold outline-none focus:bg-white transition-none resize-none"></textarea>
@@ -158,6 +158,9 @@
                             <span class="font-display text-lg sm:text-xl font-bold">Email</span>
                             <span id="email-grid-text" class="text-xs font-sans mt-1">Click to copy</span>
                         </button>
+                        <div class="hidden">
+                            <span>tokarzewski.jan@outlook.com</span>
+                        </div>
 
                         <a href="https://www.reddit.com/user/Aggressive_Bed3169/" target="_blank" rel="noopener noreferrer" class="w-full h-full bg-btnDark border-4 border-textMain lg:hover:bg-accent active:bg-accent p-4 flex flex-col items-center justify-center transition-none shadow-[4px_4px_0px_0px_#111827]">
                             <span class="font-display text-lg sm:text-xl font-bold">Reddit</span>
@@ -181,7 +184,7 @@
     </footer>
 
     <script>
-        const contactEmail = "catnipattic@gmail.com";
+        const contactEmail = "tokarzewski.jan@outlook.com";
         function copyEmail() {
             navigator.clipboard.writeText(contactEmail).then(() => {
                 const textSpan = document.getElementById('email-grid-text');
