@@ -15,5 +15,6 @@ python3 -m http.server
 Then navigate to http://localhost:8000.
 
 The underlying code is open-source under the MIT License.
+
 Important: All personal photographs, branding, project details, and written copy (in both Polish and English) are strictly All Rights Reserved (Copyright © 2026 Jan Tokarzewski). 
 You may not clone, use, or reproduce these personal assets without explicit permission.
