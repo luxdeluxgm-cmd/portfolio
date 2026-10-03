@@ -4,27 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- SEO & LOCALIZATION -->
     <title>Jan Tokarzewski | Strony, Skrypty i Tłumaczenia</title>
     <meta name="description" content="Nowoczesne strony internetowe, automatyzacja w Pythonie i porządkowanie baz danych.">
     <link rel="canonical" href="https://jantokarzewski.pl/">
 
-    <!-- Open Graph Tags -->
     <meta property="og:title" content="Jan Tokarzewski | Skrypty, Strony i Automatyzacja">
     <meta property="og:description" content="Zdejmuję z Twoich barków żmudne, techniczne zadania.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://jantokarzewski.pl/">
     <meta property="og:image" content="https://jantokarzewski.pl/images/og-image.jpg">
 
-    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cascadia+Code:wght@400;700&display=swap" rel="stylesheet">
 
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- PALETTE CONTROL -->
     <script>
         tailwind.config = {
             theme: {
@@ -55,38 +50,30 @@
 </head>
 <body class="bg-background text-textMain font-sans antialiased flex flex-col min-h-screen">
 
-    <!-- Navigation -->
     <nav class="w-full py-6 px-6 sm:px-12 flex justify-between items-center max-w-6xl mx-auto border-b-4 border-textMain bg-background sticky top-0 z-50 shadow-sm">
         <a href="#" class="font-display text-2xl font-bold hover:bg-accent px-2 transition-none">Jan Tokarzewski</a>
 
-        <!-- Desktop Menu -->
         <div class="hidden sm:flex gap-8 font-bold text-lg items-center">
             <a href="#services" class="hover:bg-accent px-2 transition-none">Usługi</a>
             <a href="#contact" class="hover:bg-accent px-2 transition-none">Kontakt</a>
-            <!-- Language Switcher to English -->
             <a href="en/index.html" class="px-2 py-1 border-2 border-textMain text-sm bg-btnDark hover:bg-accent shadow-[2px_2px_0px_0px_#111827] transition-none ml-2">EN</a>
         </div>
 
-        <!-- Mobile Menu (Now visible on phones) -->
         <div class="sm:hidden flex gap-4 font-bold text-base items-center">
             <a href="#services" class="hover:bg-accent px-2 transition-none">Usługi</a>
             <a href="#contact" class="hover:bg-accent px-2 transition-none">Kontakt</a>
-            <!-- Language Switcher to English -->
             <a href="en/index.html" class="px-2 py-0.5 border-2 border-textMain text-xs bg-btnDark hover:bg-accent shadow-[2px_2px_0px_0px_#111827] transition-none ml-1">EN</a>
         </div>
     </nav>
 
     <main class="flex-grow flex flex-col items-center w-full px-6 py-12 max-w-6xl mx-auto space-y-20">
 
-        <!-- Anti-Template Hero: The Brutalist ID Card -->
         <section class="w-full bg-btnDark border-4 border-textMain p-6 sm:p-12 shadow-[8px_8px_0px_0px_#111827] flex flex-col lg:flex-row items-center lg:items-start gap-8 sm:gap-12 mt-4 sm:mt-10">
 
-            <!-- Photo Left -->
             <div class="flex-shrink-0">
                 <img src="https://placehold.co/400x400/fafafa/111827?text=Twój+Portret" alt="Jan Tokarzewski" class="w-48 h-48 sm:w-72 sm:h-72 border-4 border-textMain object-cover shadow-[4px_4px_0px_0px_#111827]">
             </div>
 
-            <!-- Pitch Right -->
             <div class="flex flex-col justify-center text-center lg:text-left">
                 <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-none mb-6 uppercase tracking-tight">
                     Piszę skrypty, tworzę strony i porządkuję chaos.
@@ -100,25 +87,20 @@
 
 
                 <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 font-bold text-lg">
-                    <!-- Primary Action -->
                     <a href="#contact" class="bg-accent border-4 border-textMain text-white px-8 py-4 shadow-[4px_4px_0px_0px_#111827] hover:bg-textMain hover:text-white transition-none">
                         Współpraca
                     </a>
-                    <!-- Secondary Action -->
                     <a href="#services" class="bg-background border-4 border-textMain text-textMain px-8 py-4 shadow-[4px_4px_0px_0px_#111827] hover:bg-accent transition-none">
                         Zobacz co potrafię
                     </a>
 
-                    <!-- Social Squares -->
                     <div class="flex gap-4 sm:ml-2">
-                        <!-- GitHub -->
-                        <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" class="w-[60px] h-[60px] flex justify-center items-center bg-btnDark border-4 border-textMain shadow-[4px_4px_0px_0px_#111827] hover:bg-accent transition-none group">
+                        <a href="https://github.com/luxdeluxgm-cmd" target="_blank" rel="noopener noreferrer" class="w-[60px] h-[60px] flex justify-center items-center bg-btnDark border-4 border-textMain shadow-[4px_4px_0px_0px_#111827] hover:bg-accent transition-none group">
                             <svg class="w-7 h-7 text-textMain" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                 <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" />
                             </svg>
                         </a>
-                        <!-- LinkedIn -->
-                        <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" class="w-[60px] h-[60px] flex justify-center items-center bg-btnDark border-4 border-textMain shadow-[4px_4px_0px_0px_#111827] hover:bg-accent transition-none group">
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="w-[60px] h-[60px] flex justify-center items-center bg-btnDark border-4 border-textMain shadow-[4px_4px_0px_0px_#111827] hover:bg-accent transition-none group">
                             <svg class="w-6 h-6 text-textMain" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                 <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
                             </svg>
@@ -132,21 +114,18 @@
             <h2 class="text-4xl font-bold mb-10 border-b-4 border-textMain pb-4">W czym mogę pomóc?</h2>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Branch 1: Web -->
                 <a href="strony-internetowe.html" class="bg-btnDark border-4 border-textMain p-8 flex flex-col shadow-[4px_4px_0px_0px_#111827] hover:bg-accent transition-none group cursor-pointer">
                     <h3 class="text-2xl font-bold mb-4 group-hover:text-textMain">Strony Internetowe</h3>
                     <p class="text-textMuted mb-8 flex-grow group-hover:text-textMain">Błyskawiczne, autorskie strony internetowe i landing page'e budowane od zera.</p>
                     <span class="font-bold border-b-2 border-textMain pb-1 w-max group-hover:border-textMain">Sprawdź szczegóły →</span>
                 </a>
 
-                <!-- Branch 2: Automation & CMS -->
                 <a href="wip.html" class="bg-btnDark border-4 border-textMain p-8 flex flex-col shadow-[4px_4px_0px_0px_#111827] hover:bg-accent transition-none group cursor-pointer">
                     <h3 class="text-2xl font-bold mb-4 group-hover:text-textMain">Dane, Automatyzacja i CMS</h3>
                     <p class="text-textMuted mb-8 flex-grow group-hover:text-textMain">Skrypty w Pythonie, masowe czyszczenie baz Excel, naprawa WordPressa i formatowanie produktów Shopify.</p>
                     <span class="font-bold border-b-2 border-textMain pb-1 w-max group-hover:border-textMain">Sprawdź szczegóły →</span>
                 </a>
 
-                <!-- Branch 3: Media -->
                 <a href="wip.html" class="bg-btnDark border-4 border-textMain p-8 flex flex-col shadow-[4px_4px_0px_0px_#111827] hover:bg-accent transition-none group cursor-pointer">
                     <h3 class="text-2xl font-bold mb-4 group-hover:text-textMain">Media i Tłumaczenia</h3>
                     <p class="text-textMuted mb-8 flex-grow group-hover:text-textMain">Dynamiczny montaż wideo, precyzyjne napisy i tłumaczenia (PL/EN).</p>
@@ -154,7 +133,6 @@
                 </a>
             </div>
 
-            <!-- Branch 4: Designs (Wide Bottom Row) -->
             <a href="wip.html" class="mt-8 w-full bg-btnDark border-4 border-textMain p-6 sm:p-8 flex flex-col sm:flex-row justify-between items-center gap-6 shadow-[4px_4px_0px_0px_#111827] hover:bg-accent transition-none group cursor-pointer">
                 <div class="flex flex-col sm:flex-row items-center sm:items-baseline gap-4 w-full sm:w-auto text-center sm:text-left">
                     <h3 class="text-2xl font-bold group-hover:text-textMain">Projekty Graficzne</h3>
@@ -165,39 +143,32 @@
             </a>
         </section>
 
-        <!-- Direct Contact Section -->
         <section id="contact" class="w-full bg-btnDark border-4 border-textMain p-8 sm:p-12 shadow-[8px_8px_0px_0px_#111827]">
 
             <h2 class="text-4xl font-bold mb-4">Porozmawiajmy.</h2>
             <p class="text-xl text-textMuted mb-6 max-w-2xl">Opisz krótko z czym masz problem, lub skontaktuj się bezpośrednio poniżej.</p>
 
-            <!-- B2B Invoice Badge -->
             <div class="bg-background border-4 border-textMain px-4 py-2 text-sm sm:text-base font-bold shadow-[4px_4px_0px_0px_#111827] flex items-center gap-3 w-max mb-12">
                 <span class="w-3 h-3 bg-accent border-2 border-textMain block"></span>
-                Wystawiam faktury VAT
+                Wystawiam faktury
             </div>
 
-            <!-- Email Form (Top) -->
             <form id="contact-form" action="https://formspree.io/f/mqpayjbj" method="POST" class="flex flex-col gap-4 mb-16 max-w-3xl">
                 <input type="text" name="name" placeholder="Twoje imię, nazwisko lub nazwa firmy" required class="bg-background border-4 border-textMain p-4 font-bold outline-none focus:bg-white transition-none">
                 <input type="email" name="email" placeholder="Adres e-mail" required class="bg-background border-4 border-textMain p-4 font-bold outline-none focus:bg-white transition-none">
                 <textarea name="message" rows="4" placeholder="W czym mogę Ci dzisiaj pomóc?" required class="bg-background border-4 border-textMain p-4 font-bold outline-none focus:bg-white transition-none resize-none"></textarea>
-                <!-- Primary Action: Purple -> Black -->
                 <button id="submit-btn" type="submit" class="bg-accent border-4 border-textMain text-white font-bold text-lg px-8 py-4 shadow-[4px_4px_0px_0px_#111827] hover:bg-textMain hover:text-white transition-none self-start">
                     Wyślij wiadomość
                 </button>
             </form>
 
-            <!-- Communication Hub Grid (Bottom) -->
             <div class="w-full border-t-4 border-textMain pt-10">
                 <div class="font-display text-xl tracking-wide text-textMain uppercase mb-8 font-bold">
                     Bezpośredni Kontakt
                 </div>
 
-                <!-- Changed to lg:grid-cols-3 and removed Reddit for B2B professionalism -->
                 <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 w-full">
 
-                    <!-- 1. Phone -->
                     <div class="relative group w-full h-full">
                         <a href="tel:+48000000000" class="w-full h-full bg-btnDark border-4 border-textMain hover:bg-accent p-4 flex flex-col items-center justify-center transition-none shadow-[4px_4px_0px_0px_#111827]">
                             <span class="font-display text-xl font-bold">Telefon</span>
@@ -209,7 +180,6 @@
                         </div>
                     </div>
 
-                    <!-- 2. Email -->
                     <div class="relative group w-full h-full">
                         <button onclick="copyEmail()" class="w-full h-full bg-btnDark border-4 border-textMain hover:bg-accent p-4 flex flex-col items-center justify-center transition-none shadow-[4px_4px_0px_0px_#111827]">
                             <span class="font-display text-xl font-bold">E-mail</span>
@@ -221,7 +191,6 @@
                         </div>
                     </div>
 
-                    <!-- 3. Escrow / Useme -->
                     <div class="relative group w-full h-full">
                         <a href="https://useme.com/pl/roles/contractor/jantokarzewski,704217/" target="_blank" rel="noopener noreferrer" class="w-full h-full bg-btnDark border-4 border-textMain hover:bg-accent p-4 flex flex-col items-center justify-center transition-none shadow-[4px_4px_0px_0px_#111827]">
                             <span class="font-display text-xl font-bold">Useme</span>
@@ -240,14 +209,11 @@
 
     </main>
 
-    <!-- Footer -->
     <footer class="w-full py-8 text-center border-t-4 border-textMain bg-textMain text-background mt-auto">
         <p class="font-bold">© 2026 Jan Tokarzewski<a href="cat.html" class="hover:text-accent transition-none">.</a></p>
     </footer>
 
-    <!-- Scripts -->
     <script>
-        // --- EMAIL COPY LOGIC ---
         const contactEmail = "tokarzewski.jan@outlook.com";
         function copyEmail() {
             navigator.clipboard.writeText(contactEmail).then(() => {
@@ -260,12 +226,11 @@
             });
         }
 
-        // --- FORMSPREE NO-REDIRECT LOGIC ---
         const contactForm = document.getElementById('contact-form');
         const submitBtn = document.getElementById('submit-btn');
 
         contactForm.addEventListener('submit', async function(e) {
-            e.preventDefault(); // Stops the page from redirecting
+            e.preventDefault();
 
             const originalBtnText = submitBtn.textContent;
             submitBtn.textContent = "Wysyłanie...";
@@ -282,7 +247,6 @@
                 });
 
                 if (response.ok) {
-                    // Success state: turns the button black and locks it
                     submitBtn.textContent = "Wiadomość wysłana!";
                     submitBtn.classList.remove('bg-accent', 'hover:bg-textMain', 'hover:text-white');
                     submitBtn.classList.add('bg-textMain', 'text-white', 'pointer-events-none');
