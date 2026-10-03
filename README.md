@@ -1,4 +1,4 @@
-# Jan Tokarzewski – Personal Portfolio
+# Jan Tokarzewski - Personal Portfolio
 
 A custom-coded and lightweight personal website and service portal. Built for simplicity without heavy frameworks or bloated CMS templates.
 
