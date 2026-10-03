@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth scroll-pt-32">
+<html lang="en" class="scroll-smooth scroll-pt-24">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,7 +21,7 @@
                         background: '#fafafa',
                         textMain: '#111827',
                         textMuted: '#4b5563',
-                        accent: '#8b5cf6', // Purple
+                        accent: '#8b5cf6',
                         btnDark: '#ffffff',
                         borderDark: '#111827'
                     },
@@ -41,68 +41,68 @@
         ::-webkit-scrollbar-thumb:hover { background: #8b5cf6; border: 2px solid #111827; }
     </style>
 </head>
-<body class="bg-background text-textMain font-sans antialiased flex flex-col min-h-screen">
+<body class="bg-background text-textMain font-sans antialiased flex flex-col min-h-screen overflow-x-hidden">
 
-    <nav class="w-full py-6 px-6 sm:px-12 flex justify-between items-center max-w-6xl mx-auto border-b-4 border-textMain bg-background sticky top-0 z-50 shadow-sm">
-        <a href="index.html" class="font-display text-2xl font-bold hover:bg-accent px-2 transition-none">← Back to Hub</a>
+    <nav class="w-full py-4 px-4 sm:py-6 sm:px-12 flex justify-between items-center max-w-7xl mx-auto border-b-4 border-textMain bg-background sticky top-0 z-50 shadow-sm">
+        <a href="index.html" class="font-display text-xl sm:text-2xl font-bold lg:hover:bg-accent active:bg-accent px-2 transition-none">← Back to Hub</a>
         <div class="font-bold text-lg hidden sm:block">
             Media & Translation
         </div>
     </nav>
 
-    <main class="flex-grow flex flex-col w-full px-6 py-12 max-w-6xl mx-auto space-y-20">
+    <main class="flex-grow flex flex-col items-center w-full max-w-7xl mx-auto space-y-12 sm:space-y-20 px-3 sm:px-6 py-8 sm:py-12">
 
-        <section class="w-full bg-btnDark border-4 border-textMain p-8 sm:p-12 shadow-[8px_8px_0px_0px_#111827] text-center sm:text-left">
-            <h1 class="text-4xl sm:text-6xl font-bold uppercase tracking-tight mb-6">
+        <section class="w-full bg-btnDark border-4 border-textMain px-4 py-8 sm:p-12 shadow-[4px_4px_0px_0px_#111827] sm:shadow-[8px_8px_0px_0px_#111827] text-center sm:text-left mt-2 sm:mt-10">
+            <h1 class="text-3xl sm:text-5xl lg:text-6xl font-bold uppercase tracking-tight mb-4 sm:mb-6">
                 Media & Translation.
             </h1>
-            <p class="text-xl text-textMuted leading-relaxed max-w-3xl mb-8">
+            <p class="text-base sm:text-xl text-textMuted leading-relaxed max-w-5xl mb-8">
                 I translate text between English and Polish and manually create time-accurate and exact subtitles.
             </p>
-            <a href="#contact" class="inline-block bg-accent border-4 border-textMain text-white px-8 py-4 font-bold text-lg shadow-[4px_4px_0px_0px_#111827] hover:bg-textMain hover:text-white transition-none">
+            <a href="#contact" class="inline-block bg-accent border-4 border-textMain text-white px-8 py-4 font-bold base sm:text-lg shadow-[4px_4px_0px_0px_#111827] lg:hover:bg-textMain lg:hover:text-white active:bg-textMain active:text-white transition-none w-full sm:w-auto text-center">
                 Start a Project
             </a>
         </section>
 
         <section id="work" class="w-full">
-            <div class="mb-10 border-b-4 border-textMain pb-4">
-                <h2 class="text-4xl font-bold">Services & Samples</h2>
+            <div class="mb-6 sm:mb-10 border-b-4 border-textMain pb-4">
+                <h2 class="text-3xl sm:text-4xl font-bold">Services & Samples</h2>
             </div>
 
-            <div class="bg-btnDark border-4 border-textMain p-6 sm:p-8 shadow-[8px_8px_0px_0px_#111827] flex flex-col lg:flex-row gap-8 mb-12">
-                <div class="w-full lg:w-1/2 border-4 border-textMain overflow-hidden shadow-[4px_4px_0px_0px_#111827] bg-[#e5e7eb] flex items-center justify-center min-h-[260px] sm:min-h-[340px]">
-                    <img src="https://placehold.co/600x400/fafafa/111827?text=Document+Translation" alt="Translation" class="w-full h-full object-cover">
+            <div class="bg-btnDark border-4 border-textMain p-4 sm:p-8 shadow-[4px_4px_0px_0px_#111827] sm:shadow-[8px_8px_0px_0px_#111827] flex flex-col lg:flex-row gap-6 sm:gap-8 mb-8 sm:mb-12">
+                <div class="w-full lg:w-1/2 border-4 border-textMain overflow-hidden shadow-[4px_4px_0px_0px_#111827] bg-[#e5e7eb] flex items-center justify-center min-h-[200px] sm:min-h-[340px]">
+                    <img src="https://www.jacksonsquareshopping.co.uk/wp-content/uploads/2016/12/placeholder-1920x1080-copy.png" alt="Translation" class="w-full h-full object-cover">
                 </div>
                 <div class="w-full lg:w-1/2 flex flex-col justify-center text-left">
-                    <div class="inline-block bg-accent border-2 border-textMain px-3 py-1 font-bold text-white shadow-[2px_2px_0px_0px_#111827] uppercase tracking-wider w-max mb-4">
+                    <div class="inline-block bg-accent border-2 border-textMain px-3 py-1 font-bold text-white shadow-[2px_2px_0px_0px_#111827] uppercase tracking-wider w-max mb-4 text-sm sm:text-base">
                         Translation
                     </div>
-                    <h3 class="text-3xl font-bold mb-4">EN/PL Translation</h3>
-                    <p class="text-lg text-textMuted leading-relaxed mb-8">
+                    <h3 class="text-2xl sm:text-3xl font-bold mb-4">EN/PL Translation</h3>
+                    <p class="text-base sm:text-lg text-textMuted leading-relaxed mb-8">
                         English to Polish and Polish to English. From technical documentation and website copy to comedy sketches.
                     </p>
-                    <div class="flex flex-wrap gap-4 font-bold mt-auto">
-                        <a href="#" target="_blank" rel="noopener noreferrer" class="bg-accent border-4 border-textMain text-white px-6 py-3 shadow-[4px_4px_0px_0px_#111827] hover:bg-textMain hover:text-white transition-none">
+                    <div class="flex flex-col sm:flex-row gap-4 font-bold mt-auto w-full sm:w-auto">
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="bg-accent border-4 border-textMain text-white px-6 py-3 shadow-[4px_4px_0px_0px_#111827] lg:hover:bg-textMain lg:hover:text-white active:bg-textMain active:text-white transition-none text-center">
                             Read Sample ↗
                         </a>
                     </div>
                 </div>
             </div>
 
-            <div class="bg-btnDark border-4 border-textMain p-6 sm:p-8 shadow-[8px_8px_0px_0px_#111827] flex flex-col lg:flex-row gap-8">
-                <div class="w-full lg:w-1/2 border-4 border-textMain overflow-hidden shadow-[4px_4px_0px_0px_#111827] bg-[#e5e7eb] flex items-center justify-center min-h-[260px] sm:min-h-[340px]">
-                    <img src="https://placehold.co/600x400/fafafa/111827?text=Manual+Subtitles" alt="Subtitling" class="w-full h-full object-cover">
+            <div class="bg-btnDark border-4 border-textMain p-4 sm:p-8 shadow-[4px_4px_0px_0px_#111827] sm:shadow-[8px_8px_0px_0px_#111827] flex flex-col lg:flex-row gap-6 sm:gap-8">
+                <div class="w-full lg:w-1/2 border-4 border-textMain overflow-hidden shadow-[4px_4px_0px_0px_#111827] bg-[#e5e7eb] flex items-center justify-center min-h-[200px] sm:min-h-[340px]">
+                    <img src="https://www.jacksonsquareshopping.co.uk/wp-content/uploads/2016/12/placeholder-1920x1080-copy.png" alt="Subtitling" class="w-full h-full object-cover">
                 </div>
                 <div class="w-full lg:w-1/2 flex flex-col justify-center text-left">
-                    <div class="inline-block bg-accent border-2 border-textMain px-3 py-1 font-bold text-white shadow-[2px_2px_0px_0px_#111827] uppercase tracking-wider w-max mb-4">
+                    <div class="inline-block bg-accent border-2 border-textMain px-3 py-1 font-bold text-white shadow-[2px_2px_0px_0px_#111827] uppercase tracking-wider w-max mb-4 text-sm sm:text-base">
                         Media
                     </div>
-                    <h3 class="text-3xl font-bold mb-4">Manual Subtitling</h3>
-                    <p class="text-lg text-textMuted leading-relaxed mb-8">
-                        Properly synced closed captions. I can make .srt files that work with YouTube and are readable by any media player.
+                    <h3 class="text-2xl sm:text-3xl font-bold mb-4">Manual Subtitling</h3>
+                    <p class="text-base sm:text-lg text-textMuted leading-relaxed mb-8">
+                        Properly synced closed captions. I can write and sync .srt files that work with YouTube and are readable by any media player.
                     </p>
-                    <div class="flex flex-wrap gap-4 font-bold mt-auto">
-                        <a href="#" target="_blank" rel="noopener noreferrer" class="bg-accent border-4 border-textMain text-white px-6 py-3 shadow-[4px_4px_0px_0px_#111827] hover:bg-textMain hover:text-white transition-none">
+                    <div class="flex flex-col sm:flex-row gap-4 font-bold mt-auto w-full sm:w-auto">
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="bg-accent border-4 border-textMain text-white px-6 py-3 shadow-[4px_4px_0px_0px_#111827] lg:hover:bg-textMain lg:hover:text-white active:bg-textMain active:text-white transition-none text-center">
                             Watch Example ↗
                         </a>
                     </div>
@@ -111,96 +111,76 @@
         </section>
 
         <section id="pricing" class="w-full">
-            <h2 class="text-4xl font-bold mb-10 border-b-4 border-textMain pb-4">Pricing</h2>
-            <div class="bg-btnDark border-4 border-textMain p-8 sm:p-12 shadow-[8px_8px_0px_0px_#111827] text-textMain font-bold text-xl sm:text-2xl leading-relaxed">
-                Rates start at <span class="bg-accent border-4 border-textMain text-white px-3 py-1 mx-1 shadow-[2px_2px_0px_0px_#111827]">10 USD</span> for simple translations or a video subtitles. <br><br>
+            <h2 class="text-3xl sm:text-4xl font-bold mb-6 sm:mb-10 border-b-4 border-textMain pb-4">Pricing</h2>
+            <div class="bg-btnDark border-4 border-textMain p-6 sm:p-12 shadow-[4px_4px_0px_0px_#111827] sm:shadow-[8px_8px_0px_0px_#111827] text-textMain font-bold text-lg sm:text-2xl leading-relaxed">
+                Rates start at <span class="bg-accent border-4 border-textMain text-white px-2 sm:px-3 py-1 mx-1 shadow-[2px_2px_0px_0px_#111827] inline-block mb-1 sm:mb-0">10 USD</span> for simple translations or a video subtitles. <br><br>
                 Pricing scales depending on the length of the raw footage or the word count of your project. Reach out below with a sample of your file to get an exact quote.
             </div>
         </section>
 
-        <section id="contact" class="w-full bg-btnDark border-4 border-textMain p-8 sm:p-12 shadow-[8px_8px_0px_0px_#111827]">
+        <section id="contact" class="w-full bg-btnDark border-4 border-textMain px-4 py-8 sm:p-12 shadow-[4px_4px_0px_0px_#111827] sm:shadow-[8px_8px_0px_0px_#111827]">
 
-            <h2 class="text-4xl font-bold mb-4">Let's talk.</h2>
-            <p class="text-xl text-textMuted mb-6 max-w-2xl">Send me a quick message explaining what you need done, or reach out via any platform below.</p>
-
-            <div class="bg-background border-4 border-textMain px-4 py-2 text-sm sm:text-base font-bold shadow-[4px_4px_0px_0px_#111827] flex items-center gap-3 w-max mb-12">
-                <span class="w-3 h-3 bg-accent border-2 border-textMain block"></span>
-                B2B Invoices Available (via Useme)
+            <div class="mb-8 sm:mb-12">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4">Let's talk.</h2>
+                <p class="text-base sm:text-xl text-textMuted max-w-2xl">Send me a quick message explaining what you need done, or reach out via any platform below.</p>
             </div>
 
-            <form id="contact-form" action="https://formspree.io/f/mqpayjbj" method="POST" class="flex flex-col gap-4 mb-16 max-w-3xl">
-                <input type="text" name="name" placeholder="Your Name or Username" required class="bg-background border-4 border-textMain p-4 font-bold outline-none focus:bg-white transition-none">
-                <input type="email" name="email" placeholder="Email Address" required class="bg-background border-4 border-textMain p-4 font-bold outline-none focus:bg-white transition-none">
-                <textarea name="message" rows="4" placeholder="What task do you need taken off your plate?" required class="bg-background border-4 border-textMain p-4 font-bold outline-none focus:bg-white transition-none resize-none"></textarea>
-                <button id="submit-btn" type="submit" class="bg-accent border-4 border-textMain text-white font-bold text-lg px-8 py-4 shadow-[4px_4px_0px_0px_#111827] hover:bg-textMain hover:text-white transition-none self-start">
-                    Send Message
-                </button>
-            </form>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 w-full">
 
-            <div class="w-full border-t-4 border-textMain pt-10">
-                <div class="font-display text-xl tracking-wide text-textMain uppercase mb-8 font-bold">
-                    Direct Channels & Platforms
+                <div class="flex flex-col w-full">
+                    <div class="bg-background border-4 border-textMain px-4 py-2 text-sm sm:text-base font-bold shadow-[4px_4px_0px_0px_#111827] flex items-center gap-3 w-max mb-8">
+                        <span class="w-3 h-3 flex-shrink-0 bg-accent border-2 border-textMain block"></span>
+                        <span>B2B Invoices Available (via Useme)</span>
+                    </div>
+
+                    <form id="contact-form" action="https://formspree.io/f/mqpayjbj" method="POST" class="flex flex-col gap-4 w-full">
+                        <input type="text" name="name" placeholder="Your Name or Username" required class="w-full bg-background border-4 border-textMain p-4 font-bold outline-none focus:bg-white transition-none">
+                        <input type="email" name="email" placeholder="Email Address" required class="w-full bg-background border-4 border-textMain p-4 font-bold outline-none focus:bg-white transition-none">
+                        <textarea name="message" rows="4" placeholder="What task do you need taken off your plate?" required class="w-full bg-background border-4 border-textMain p-4 font-bold outline-none focus:bg-white transition-none resize-none"></textarea>
+                        <button id="submit-btn" type="submit" class="bg-accent border-4 border-textMain text-white font-bold text-lg px-8 py-4 shadow-[4px_4px_0px_0px_#111827] lg:hover:bg-textMain lg:hover:text-white active:bg-textMain active:text-white transition-none self-start w-full sm:w-auto mt-2">
+                            Send Message
+                        </button>
+                    </form>
                 </div>
 
-                <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 w-full">
+                <div class="flex flex-col w-full">
+                    <div class="font-display text-xl tracking-wide text-textMain uppercase mb-6 sm:mb-8 font-bold border-b-4 border-textMain pb-4">
+                        Direct Channels & Platforms
+                    </div>
 
-                    <div class="relative group w-full h-full">
-                        <a href="tel:+48000000000" class="w-full h-full bg-btnDark border-4 border-textMain hover:bg-accent p-4 flex flex-col items-center justify-center transition-none shadow-[4px_4px_0px_0px_#111827]">
-                            <span class="font-display text-xl font-bold">Phone</span>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 w-full">
+                        <a href="tel:+48000000000" class="w-full h-full bg-btnDark border-4 border-textMain lg:hover:bg-accent active:bg-accent p-4 flex flex-col items-center justify-center transition-none shadow-[4px_4px_0px_0px_#111827]">
+                            <span class="font-display text-lg sm:text-xl font-bold">Phone</span>
                             <span class="text-xs font-sans mt-1">Direct call</span>
                         </a>
-                        <div class="absolute -top-14 left-1/2 -translate-x-1/2 px-4 py-2 bg-background border-4 border-textMain text-sm font-sans font-bold text-textMain whitespace-nowrap hidden group-hover:flex items-center gap-2 shadow-[4px_4px_0px_0px_#111827] z-20">
-                            <span class="w-3 h-3 border-2 border-textMain bg-accent"></span>
-                            <span>+48 000 000 000</span>
-                        </div>
-                    </div>
 
-                    <div class="relative group w-full h-full">
-                        <button onclick="copyEmail()" class="w-full h-full bg-btnDark border-4 border-textMain hover:bg-accent p-4 flex flex-col items-center justify-center transition-none shadow-[4px_4px_0px_0px_#111827]">
-                            <span class="font-display text-xl font-bold">Email</span>
+                        <button onclick="copyEmail()" class="w-full h-full bg-btnDark border-4 border-textMain lg:hover:bg-accent active:bg-accent p-4 flex flex-col items-center justify-center transition-none shadow-[4px_4px_0px_0px_#111827]">
+                            <span class="font-display text-lg sm:text-xl font-bold">Email</span>
                             <span id="email-grid-text" class="text-xs font-sans mt-1">Click to copy</span>
                         </button>
-                        <div class="absolute -top-14 left-1/2 -translate-x-1/2 px-4 py-2 bg-background border-4 border-textMain text-sm font-sans font-bold text-textMain whitespace-nowrap hidden group-hover:flex items-center gap-2 shadow-[4px_4px_0px_0px_#111827] z-20">
-                            <span class="w-3 h-3 border-2 border-textMain bg-accent"></span>
-                            <span>catnipattic@gmail.com</span>
-                        </div>
-                    </div>
 
-                    <div class="relative group w-full h-full">
-                        <a href="https://www.reddit.com/user/Aggressive_Bed3169/" target="_blank" rel="noopener noreferrer" class="w-full h-full bg-btnDark border-4 border-textMain hover:bg-accent p-4 flex flex-col items-center justify-center transition-none shadow-[4px_4px_0px_0px_#111827]">
-                            <span class="font-display text-xl font-bold">Reddit</span>
+                        <a href="https://www.reddit.com/user/Aggressive_Bed3169/" target="_blank" rel="noopener noreferrer" class="w-full h-full bg-btnDark border-4 border-textMain lg:hover:bg-accent active:bg-accent p-4 flex flex-col items-center justify-center transition-none shadow-[4px_4px_0px_0px_#111827]">
+                            <span class="font-display text-lg sm:text-xl font-bold">Reddit</span>
                             <span class="text-xs font-sans mt-1">My profile</span>
                         </a>
-                        <div class="absolute -top-14 left-1/2 -translate-x-1/2 px-4 py-2 bg-background border-4 border-textMain text-sm font-sans font-bold text-textMain whitespace-nowrap hidden group-hover:flex items-center gap-2 shadow-[4px_4px_0px_0px_#111827] z-20">
-                            <span class="w-3 h-3 border-2 border-textMain bg-accent"></span>
-                            <span>u/AggressiveBed</span>
-                        </div>
-                    </div>
 
-                    <div class="relative group w-full h-full">
-                        <a href="https://useme.com/pl/roles/contractor/catnipattic,704217/" target="_blank" rel="noopener noreferrer" class="w-full h-full bg-btnDark border-4 border-textMain hover:bg-accent p-4 flex flex-col items-center justify-center transition-none shadow-[4px_4px_0px_0px_#111827]">
-                            <span class="font-display text-xl font-bold">Useme</span>
+                        <a href="https://useme.com/pl/roles/contractor/catnipattic,704217/" target="_blank" rel="noopener noreferrer" class="w-full h-full bg-btnDark border-4 border-textMain lg:hover:bg-accent active:bg-accent p-4 flex flex-col items-center justify-center transition-none shadow-[4px_4px_0px_0px_#111827]">
+                            <span class="font-display text-lg sm:text-xl font-bold">Useme</span>
                             <span class="text-xs font-sans mt-1">B2B Invoice</span>
                         </a>
-                        <div class="absolute -top-14 left-1/2 -translate-x-1/2 px-4 py-2 bg-background border-4 border-textMain text-sm font-sans font-bold text-textMain whitespace-nowrap hidden group-hover:flex items-center gap-2 shadow-[4px_4px_0px_0px_#111827] z-20">
-                            <span class="w-3 h-3 border-2 border-textMain bg-accent"></span>
-                            <span>Verified Escrow</span>
-                        </div>
                     </div>
-
                 </div>
-            </div>
 
+            </div>
         </section>
 
     </main>
 
     <footer class="w-full py-8 text-center border-t-4 border-textMain bg-textMain text-background mt-auto">
-        <p class="font-bold">© 2026 Jan Tokarzewski<a href="cat.html" class="hover:text-accent transition-none">.</a></p>
+        <p class="font-bold text-sm sm:text-base">© 2026 Jan Tokarzewski<a href="cat.html" class="lg:hover:text-accent active:text-accent transition-none">.</a></p>
     </footer>
 
     <script>
-
         const contactEmail = "catnipattic@gmail.com";
         function copyEmail() {
             navigator.clipboard.writeText(contactEmail).then(() => {
@@ -235,7 +215,7 @@
 
                 if (response.ok) {
                     submitBtn.textContent = "Message Sent!";
-                    submitBtn.classList.remove('bg-accent', 'hover:bg-textMain', 'hover:text-white');
+                    submitBtn.classList.remove('bg-accent', 'lg:hover:bg-textMain', 'lg:hover:text-white', 'active:bg-textMain', 'active:text-white');
                     submitBtn.classList.add('bg-textMain', 'text-white', 'pointer-events-none');
                     contactForm.reset();
                 } else {
