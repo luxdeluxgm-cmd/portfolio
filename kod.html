@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pl" class="scroll-smooth scroll-pt-24">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jan Tokarzewski | Dane i Automatyzacja</title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <meta name="description" content="Autorskie skrypty w Pythonie, formatowanie danych, automatyzacja i zarządzanie CMS.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cascadia+Code:wght@400;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        background: '#fafafa',
+                        textMain: '#111827',
+                        textMuted: '#4b5563',
+                        accent: '#8b5cf6',
+                        btnDark: '#ffffff',
+                        borderDark: '#111827'
+                    },
+                    fontFamily: {
+                        sans: ['"Cascadia Code"', 'monospace'],
+                        display: ['"Cascadia Code"', 'monospace'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        ::-webkit-scrollbar { width: 12px; }
+        ::-webkit-scrollbar-track { background: #fafafa; border-left: 4px solid #111827; }
+        ::-webkit-scrollbar-thumb { background: #111827; }
+        ::-webkit-scrollbar-thumb:hover { background: #8b5cf6; border: 2px solid #111827; }
+    </style>
+</head>
+<body class="bg-background text-textMain font-sans antialiased flex flex-col min-h-screen overflow-x-hidden">
+
+    <nav class="w-full py-4 px-4 sm:py-6 sm:px-12 flex justify-between items-center max-w-7xl mx-auto border-b-4 border-textMain bg-background sticky top-0 z-50 shadow-sm">
+        <a href="index.html" class="flex flex-col px-2 lg:hover:bg-accent active:bg-accent transition-none w-max">
+            <span class="font-display text-xl sm:text-2xl font-bold whitespace-nowrap">Jan Tokarzewski</span>
+            <span class="text-xs font-sans font-bold mt-0.5"> ⬅ Strona Główna</span>
+        </a>
+        <div class="font-bold text-lg hidden sm:block">
+            Dane, Automatyzacja i CMS
+        </div>
+    </nav>
+
+    <main class="flex-grow flex flex-col items-center w-full max-w-7xl mx-auto space-y-12 sm:space-y-20 px-3 sm:px-6 py-8 sm:py-12">
+
+        <section class="w-full bg-btnDark border-4 border-textMain px-4 py-8 sm:p-12 shadow-[4px_4px_0px_0px_#111827] sm:shadow-[8px_8px_0px_0px_#111827] text-center sm:text-left mt-2 sm:mt-10">
+            <h1 class="text-3xl sm:text-5xl lg:text-6xl font-bold uppercase tracking-tight mb-4 sm:mb-6">
+                Dane, Automatyzacja i CMS.
+            </h1>
+            <p class="text-base sm:text-xl text-textMuted leading-relaxed max-w-5xl mb-8">
+                Piszę autorskie skrypty w Pythonie, zarządzam bazami danych, czyszczę potężne pliki Excel i automatyzuję żmudne zadania, które marnują Twój czas.
+            </p>
+            <a href="#contact" class="inline-block bg-accent border-4 border-textMain text-white px-8 py-4 font-bold text-base sm:text-lg shadow-[4px_4px_0px_0px_#111827] lg:hover:bg-textMain lg:hover:text-white active:bg-textMain active:text-white transition-none w-full sm:w-auto text-center">
+                Zautomatyzuj zadanie
+            </a>
+        </section>
+
+        <section id="work" class="w-full">
+            <div class="mb-6 sm:mb-10 border-b-4 border-textMain pb-4">
+                <h2 class="text-3xl sm:text-4xl font-bold">Skrypty i Projekty</h2>
+            </div>
+
+            <!-- Placeholder Project 1 -->
+            <div class="bg-btnDark border-4 border-textMain p-4 sm:p-8 shadow-[4px_4px_0px_0px_#111827] sm:shadow-[8px_8px_0px_0px_#111827] flex flex-col lg:flex-row gap-6 sm:gap-8 mb-8 sm:mb-12">
+                <div class="w-full lg:w-1/2 border-4 border-textMain overflow-hidden shadow-[4px_4px_0px_0px_#111827] bg-[#e5e7eb] flex items-center justify-center min-h-[200px] sm:min-h-[340px]">
+                    <img src="https://rmi.msu.edu/_assets/images/placeholder/placeholder-400x400.jpg" alt="Projekt 1" class="w-full h-full object-cover">
+                </div>
+                <div class="w-full lg:w-1/2 flex flex-col justify-center text-left">
+                    <div class="inline-block bg-accent border-2 border-textMain px-3 py-1 font-bold text-white shadow-[2px_2px_0px_0px_#111827] uppercase tracking-wider w-max mb-4 text-sm sm:text-base">
+                        [KATEGORIA np. Automatyzacja w Pythonie]
+                    </div>
+                    <h3 class="text-2xl sm:text-3xl font-bold mb-4">[Nazwa Projektu Tutaj]</h3>
+                    <p class="text-base sm:text-lg text-textMuted leading-relaxed mb-8">
+                        [Krótki opis tego, co robi ten skrypt lub projekt. Np. "Web scraper w Pythonie, który codziennie pobiera ogłoszenia nieruchomości i formatuje je do czystego pliku CSV."]
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 font-bold mt-auto w-full sm:w-auto">
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="bg-accent border-4 border-textMain text-white px-6 py-3 shadow-[4px_4px_0px_0px_#111827] lg:hover:bg-textMain lg:hover:text-white active:bg-textMain active:text-white transition-none text-center">
+                            [Zobacz Kod / Demo]
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Placeholder Project 2 -->
+            <div class="bg-btnDark border-4 border-textMain p-4 sm:p-8 shadow-[4px_4px_0px_0px_#111827] sm:shadow-[8px_8px_0px_0px_#111827] flex flex-col lg:flex-row gap-6 sm:gap-8">
+                <div class="w-full lg:w-1/2 border-4 border-textMain overflow-hidden shadow-[4px_4px_0px_0px_#111827] bg-[#e5e7eb] flex items-center justify-center min-h-[200px] sm:min-h-[340px]">
+                    <img src="https://rmi.msu.edu/_assets/images/placeholder/placeholder-400x400.jpg" alt="Projekt 2" class="w-full h-full object-cover">
+                </div>
+                <div class="w-full lg:w-1/2 flex flex-col justify-center text-left">
+                    <div class="inline-block bg-accent border-2 border-textMain px-3 py-1 font-bold text-white shadow-[2px_2px_0px_0px_#111827] uppercase tracking-wider w-max mb-4 text-sm sm:text-base">
+                        [KATEGORIA np. Dane i CMS]
+                    </div>
+                    <h3 class="text-2xl sm:text-3xl font-bold mb-4">[Nazwa Projektu Tutaj]</h3>
+                    <p class="text-base sm:text-lg text-textMuted leading-relaxed mb-8">
+                        [Krótki opis projektu. Np. "Wyczyszczenie i sformatowanie bazy 10 000 produktów Shopify, z automatycznym sortowaniem tagów i aktualizacją stanów magazynowych."]
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 font-bold mt-auto w-full sm:w-auto">
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="bg-accent border-4 border-textMain text-white px-6 py-3 shadow-[4px_4px_0px_0px_#111827] lg:hover:bg-textMain lg:hover:text-white active:bg-textMain active:text-white transition-none text-center">
+                            [Zobacz Kod / Demo]
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing" class="w-full">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-6 sm:mb-10 border-b-4 border-textMain pb-4">Cennik</h2>
+            <div class="bg-btnDark border-4 border-textMain p-6 sm:p-12 shadow-[4px_4px_0px_0px_#111827] sm:shadow-[8px_8px_0px_0px_#111827] text-textMain font-bold text-lg sm:text-2xl leading-relaxed">
+                Stawki zaczynają się od <span class="bg-accent border-4 border-textMain text-white px-2 sm:px-3 py-1 mx-1 shadow-[2px_2px_0px_0px_#111827] inline-block mb-1 sm:mb-0">[CENA PLN]</span> za proste formatowanie danych lub małe skrypty automatyzujące. <br><br>
+                Cena rośnie w zależności od stopnia skomplikowania kodu, integracji API i ogólnego zakresu projektu. Skontaktuj się ze mną poniżej i opisz swoje wymagania, aby otrzymać dokładną wycenę.
+            </div>
+        </section>
+
+        <section id="contact" class="w-full bg-btnDark border-4 border-textMain px-4 py-8 sm:p-12 shadow-[4px_4px_0px_0px_#111827] sm:shadow-[8px_8px_0px_0px_#111827]">
+
+            <div class="mb-8 sm:mb-12">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4">Porozmawiajmy.</h2>
+                <p class="text-base sm:text-xl text-textMuted max-w-2xl">Opisz krótko z czym masz problem. Możesz też skontaktować się bezpośrednio.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 w-full">
+
+                <div class="flex flex-col w-full">
+                    <div class="bg-background border-4 border-textMain px-4 py-2 text-sm sm:text-base font-bold shadow-[4px_4px_0px_0px_#111827] flex items-center gap-3 w-max mb-8">
+                        <span class="w-3 h-3 flex-shrink-0 bg-accent border-2 border-textMain block"></span>
+                        <span>Wystawiam faktury VAT</span>
+                    </div>
+
+                    <form id="contact-form" action="https://formspree.io/f/mljdqvln" method="POST" class="flex flex-col gap-4 w-full">
+                        <input type="text" name="name" placeholder="Twoje imię, nazwisko lub nazwa firmy" required class="w-full bg-background border-4 border-textMain p-4 font-bold outline-none focus:bg-white transition-none">
+                        <input type="email" name="email" placeholder="Adres e-mail" required class="w-full bg-background border-4 border-textMain p-4 font-bold outline-none focus:bg-white transition-none">
+                        <textarea name="message" rows="4" placeholder="W czym mogę Ci dzisiaj pomóc?" required class="w-full bg-background border-4 border-textMain p-4 font-bold outline-none focus:bg-white transition-none resize-none"></textarea>
+                        <button id="submit-btn" type="submit" class="bg-accent border-4 border-textMain text-white font-bold text-lg px-8 py-4 shadow-[4px_4px_0px_0px_#111827] lg:hover:bg-textMain lg:hover:text-white active:bg-textMain active:text-white transition-none self-start w-full sm:w-auto mt-2">
+                            Wyślij wiadomość
+                        </button>
+                    </form>
+                </div>
+
+                <div class="flex flex-col w-full">
+                    <div class="font-display text-xl tracking-wide text-textMain uppercase mb-6 sm:mb-8 font-bold border-b-4 border-textMain pb-4">
+                        Bezpośredni Kontakt
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 w-full">
+                        <a href="tel:+48000000000" class="w-full h-full bg-btnDark border-4 border-textMain lg:hover:bg-accent active:bg-accent p-4 flex flex-col items-center justify-center transition-none shadow-[4px_4px_0px_0px_#111827]">
+                            <span class="font-display text-lg sm:text-xl font-bold">Telefon</span>
+                            <span class="text-xs font-sans mt-1">Zadzwoń bezpośrednio</span>
+                        </a>
+
+                        <button onclick="copyEmail()" class="w-full h-full bg-btnDark border-4 border-textMain lg:hover:bg-accent active:bg-accent p-4 flex flex-col items-center justify-center transition-none shadow-[4px_4px_0px_0px_#111827]">
+                            <span class="font-display text-lg sm:text-xl font-bold">E-mail</span>
+                            <span id="email-grid-text" class="text-xs font-sans mt-1">Kliknij, by skopiować</span>
+                        </button>
+
+                        <a href="https://useme.com/pl/roles/contractor/jantokarzewski,704217/" target="_blank" rel="noopener noreferrer" class="w-full h-full sm:col-span-2 bg-btnDark border-4 border-textMain lg:hover:bg-accent active:bg-accent p-4 flex flex-col items-center justify-center transition-none shadow-[4px_4px_0px_0px_#111827]">
+                            <span class="font-display text-lg sm:text-xl font-bold">Useme</span>
+                            <span class="text-xs font-sans mt-1">Rozliczenia B2B</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="w-full py-8 text-center border-t-4 border-textMain bg-textMain text-background mt-auto">
+        <p class="font-bold text-sm sm:text-base">© 2026 Jan Tokarzewski<a href="cat.html" class="lg:hover:text-accent active:text-accent transition-none">.</a></p>
+    </footer>
+
+    <script>
+        function copyEmail() {
+            const contactEmail = "tokarzewski.jan@outlook.com";
+
+            if (navigator.clipboard && window.isSecureContext) {
+                navigator.clipboard.writeText(contactEmail).then(() => {
+                    const textSpan = document.getElementById('email-grid-text');
+                    const originalText = textSpan.textContent;
+                    textSpan.textContent = "Skopiowano!";
+                    setTimeout(() => { textSpan.textContent = originalText; }, 2000);
+                }).catch(() => {
+                    window.location.href = `mailto:${contactEmail}`;
+                });
+            } else {
+                window.location.href = `mailto:${contactEmail}`;
+            }
+        }
+
+        const contactForm = document.getElementById('contact-form');
+        const submitBtn = document.getElementById('submit-btn');
+
+        contactForm.addEventListener('submit', async function(e) {
+            e.preventDefault();
+
+            const originalBtnText = submitBtn.textContent;
+            submitBtn.textContent = "Wysyłanie...";
+
+            const formData = new FormData(contactForm);
+
+            try {
+                const response = await fetch(contactForm.action, {
+                    method: contactForm.method,
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+
+                if (response.ok) {
+                    submitBtn.textContent = "Wiadomość wysłana!";
+                    submitBtn.classList.remove('bg-accent', 'lg:hover:bg-textMain', 'lg:hover:text-white', 'active:bg-textMain', 'active:text-white');
+                    submitBtn.classList.add('bg-textMain', 'text-white', 'pointer-events-none');
+                    contactForm.reset();
+                } else {
+                    submitBtn.textContent = "Błąd. Spróbuj ponownie.";
+                    setTimeout(() => { submitBtn.textContent = originalBtnText; }, 3000);
+                }
+            } catch (error) {
+                submitBtn.textContent = "Błąd. Spróbuj ponownie.";
+                setTimeout(() => { submitBtn.textContent = originalBtnText; }, 3000);
+            }
+        });
+    </script>
+</body>
+</html>
