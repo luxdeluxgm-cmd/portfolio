@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+
+/* ---- Twoje style (przeniesione bez zmian z <style>, wspólne dla stron) ---- */
+::-webkit-scrollbar { width: 12px; }
+::-webkit-scrollbar-track { background: #fafafa; border-left: 4px solid #111827; }
+::-webkit-scrollbar-thumb { background: #111827; }
+::-webkit-scrollbar-thumb:hover { background: #8b5cf6; border: 2px solid #111827; }
+
+/* Klasy narzędziowe muszą być PO Twoich stylach, żeby miały pierwszeństwo (tak jak z CDN). */
+@tailwind utilities;
