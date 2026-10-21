@@ -4,7 +4,7 @@ A custom-coded and lightweight personal website and service portal. Built for si
 
 ## Tech Stack
 * **HTML5**
-* **Tailwind CSS** (via CDN)
+* **Tailwind CSS**
 * **Vanilla JavaScript** 
 
 ## Local Development
