@@ -46,7 +46,7 @@
                 <h2 class="text-3xl sm:text-4xl font-bold">Selected Work</h2>
 
                 <div class="flex items-center gap-3">
-                    <span id="demo-counter" class="font-bold text-lg px-2">01 / 03</span>
+                    <span id="demo-counter" class="font-bold text-lg px-2">01 / 04</span>
                     <button onclick="prevProject()" aria-label="Previous project" class="w-12 h-12 flex justify-center items-center bg-btnDark border-4 border-textMain shadow-[4px_4px_0px_0px_#111827] lg:hover:bg-accent active:bg-accent active:translate-x-1 active:translate-y-1 transition-none font-bold text-xl cursor-pointer">
                         ←
                     </button>
@@ -58,19 +58,19 @@
 
             <div class="bg-btnDark border-4 border-textMain p-4 sm:p-8 shadow-[4px_4px_0px_0px_#111827] sm:shadow-[8px_8px_0px_0px_#111827] flex flex-col lg:flex-row gap-6 sm:gap-8">
                 <div class="w-full lg:w-1/2 border-4 border-textMain overflow-hidden shadow-[4px_4px_0px_0px_#111827] bg-[#e5e7eb] flex items-center justify-center min-h-[200px] sm:min-h-[340px]">
-                    <img id="demo-img" src="https://www.jacksonsquareshopping.co.uk/wp-content/uploads/2016/12/placeholder-1920x1080-copy.png" alt="Project Screenshot" class="w-full h-full object-cover">
+                    <img id="demo-img" src="../img/en/flowershop.png" alt="Project Screenshot" class="w-full h-full object-cover">
                 </div>
 
                 <div class="w-full lg:w-1/2 flex flex-col justify-center text-left">
                     <div id="demo-badge" class="inline-block bg-accent border-2 border-textMain px-3 py-1 font-bold text-white shadow-[2px_2px_0px_0px_#111827] uppercase tracking-wider w-max mb-4 text-sm sm:text-base">
-                        category 1
+                        LOCAL BUSINESS
                     </div>
-                    <h3 id="demo-title" class="text-2xl sm:text-3xl font-bold mb-4">title 1</h3>
+                    <h3 id="demo-title" class="text-2xl sm:text-3xl font-bold mb-4">Green Corner Florist</h3>
                     <p id="demo-desc" class="text-base sm:text-lg text-textMuted leading-relaxed mb-8">
-                        blah blah lorem ipsum description 1
+                        Lightweight boutique landing page with a custom order form for special occasions, visual service catalog, and mobile-optimized layout.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4 font-bold mt-auto w-full sm:w-auto">
-                        <a id="demo-live" href="#" target="_blank" rel="noopener noreferrer" class="bg-accent border-4 border-textMain text-white px-6 py-3 shadow-[4px_4px_0px_0px_#111827] lg:hover:bg-textMain lg:hover:text-white active:bg-textMain active:text-white transition-none text-center">
+                        <a id="demo-live" href="https://demo.jantokarzewski.pl/en/flowershop" target="_blank" rel="noopener noreferrer" class="bg-accent border-4 border-textMain text-white px-6 py-3 shadow-[4px_4px_0px_0px_#111827] lg:hover:bg-textMain lg:hover:text-white active:bg-textMain active:text-white transition-none text-center">
                             View Live Demo
                         </a>
                     </div>
@@ -117,7 +117,7 @@
                     </div>
 
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 w-full">
-                        <a href="tel:+48000000000" class="w-full h-full bg-btnDark border-4 border-textMain lg:hover:bg-accent active:bg-accent p-4 flex flex-col items-center justify-center transition-none shadow-[4px_4px_0px_0px_#111827]">
+                        <a href="tel:+48508506353" class="w-full h-full bg-btnDark border-4 border-textMain lg:hover:bg-accent active:bg-accent p-4 flex flex-col items-center justify-center transition-none shadow-[4px_4px_0px_0px_#111827]">
                             <span class="font-display text-lg sm:text-xl font-bold">Phone</span>
                             <span class="text-xs font-sans mt-1">Direct call</span>
                         </a>
@@ -151,25 +151,32 @@
     <script>
         const projects = [
             {
-                badge: "category 1",
-                title: "title 1",
-                desc: "blah blah lorem ipsum description 1",
-                img: "https://www.jacksonsquareshopping.co.uk/wp-content/uploads/2016/12/placeholder-1920x1080-copy.png",
-                liveUrl: "#"
+                badge: "LOCAL BUSINESS",
+                title: "Green Corner Florist",
+                desc: "Lightweight boutique landing page with a custom order form for special occasions, visual service catalog, and mobile-optimized layout.",
+                img: "../img/en/flowershop.png",
+                liveUrl: "https://demo.jantokarzewski.pl/en/flowershop"
             },
             {
-                badge: "category 2",
-                title: "title 2",
-                desc: "blah blah lorem ipsum description 2",
-                img: "https://www.jacksonsquareshopping.co.uk/wp-content/uploads/2016/12/placeholder-1920x1080-copy.png",
-                liveUrl: "#"
+                badge: "E-COMMERCE",
+                title: "Włodek's Apiary",
+                desc: "Warm and inviting online storefront for natural honey products. Features an intuitive shopping cart flow and responsive grid layout.",
+                img: "../img/en/apiary.png",
+                liveUrl: "https://demo.jantokarzewski.pl/en/apiary"
             },
             {
-                badge: "category 3",
-                title: "title 3",
-                desc: "blah blah lorem ipsum description 3",
-                img: "https://www.jacksonsquareshopping.co.uk/wp-content/uploads/2016/12/placeholder-1920x1080-copy.png",
-                liveUrl: "#"
+                badge: "AUTO SERVICE",
+                title: "AutoBieżnik Garage",
+                desc: "High-converting auto repair service showcase featuring an appointment booking form, transparent service pricing table, and bold industrial design.",
+                img: "../img/en/autoshop.png",
+                liveUrl: "https://demo.jantokarzewski.pl/en/autoshop"
+            },
+            {
+                badge: "PERSONAL",
+                title: "Tomasz Bartczak - Movement & Strength",
+                desc: "High-energy landing page for a personal trainer and sports nutritionist. Includes clear pricing tiers, background credential table, and direct inquiry form.",
+                img: "../img/en/trainer.png",
+                liveUrl: "https://demo.jantokarzewski.pl/en/trainer"
             }
         ];
 
