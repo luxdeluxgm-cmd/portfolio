@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'Cascadia Code';
+    src: url('../fonts/CascadiaCode.woff2') format('woff2');
+    font-weight: 400 700;
+    font-style: normal;
+    font-display: swap;
+}
+
 @tailwind base;
 @tailwind components;
 
@@ -9,3 +17,11 @@
 
 /* Klasy narzędziowe muszą być PO Twoich stylach, żeby miały pierwszeństwo (tak jak z CDN). */
 @tailwind utilities;
+
+/* ---- Phone overflow fix ---- */
+.w-max { max-width: 100%; }
+h1, h2, h3, p, a, span, label { overflow-wrap: anywhere; }
+@media (max-width: 639px) {
+    nav { flex-wrap: wrap; row-gap: .5rem; }
+    nav > div { margin-left: auto; }
+}
