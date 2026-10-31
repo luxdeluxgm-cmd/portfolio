@@ -3,5 +3,10 @@
 h1,h2,h3,p,a,span,label{overflow-wrap:anywhere}
 @media (max-width:639px){
   nav{flex-wrap:wrap;row-gap:.5rem}
+  nav[class]{padding-left:.75rem;padding-right:.75rem}
   nav>div{margin-left:auto}
+  nav .font-display{font-size:clamp(1rem,4.4vw,1.25rem)}
+  nav>div.sm\:hidden{gap:.125rem;font-size:clamp(.8125rem,3.5vw,.875rem)}
+  nav>div.sm\:hidden>a{padding:.5rem .25rem}
+  nav>div.sm\:hidden>a:last-child{padding:.375rem .5rem;margin-left:.25rem}
 }
