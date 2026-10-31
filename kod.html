@@ -8,6 +8,14 @@
     <link rel="icon" type="image/png" href="img/favicon.png">
     <meta name="description" content="Autorskie skrypty, formatowanie danych i automatyzacja">
 
+    <link rel="canonical" href="https://jantokarzewski.pl/kod">
+
+    <meta property="og:title" content="Jan Tokarzewski | Dane i Automatyzacja">
+    <meta property="og:description" content="Autorskie skrypty, formatowanie danych i automatyzacja">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jantokarzewski.pl/kod">
+    <meta property="og:image" content="https://jantokarzewski.pl/img/og-image.jpg">
+
     <link rel="stylesheet" href="css/style.css">
 
     <link rel="alternate" hreflang="pl" href="https://jantokarzewski.pl/kod">
@@ -37,7 +45,7 @@
                 Piszę autorskie skrypty w Pythonie i automatyzuję powtarzalne zadania.
             </p>
             <a href="#contact" class="inline-block bg-accent border-4 border-textMain text-white px-8 py-4 font-bold text-base sm:text-lg shadow-[4px_4px_0px_0px_#111827] lg:hover:bg-textMain lg:hover:text-white active:bg-textMain active:text-white transition-none w-full sm:w-auto text-center">
-                Współpraca
+                Napisz do mnie
             </a>
         </section>
 
@@ -116,9 +124,10 @@
                     </div>
 
                     <form id="contact-form" action="https://formspree.io/f/mzeznwva" method="POST" class="flex flex-col gap-4 w-full">
-                        <input type="text" name="name" placeholder="Twoje imię, nazwisko lub nazwa firmy" required class="w-full bg-background border-4 border-textMain p-4 font-bold outline-none focus:bg-white transition-none">
-                        <input type="email" name="email" placeholder="Adres e-mail" required class="w-full bg-background border-4 border-textMain p-4 font-bold outline-none focus:bg-white transition-none">
-                        <textarea name="message" rows="4" placeholder="W czym mogę Ci dzisiaj pomóc?" required class="w-full bg-background border-4 border-textMain p-4 font-bold outline-none focus:bg-white transition-none resize-none"></textarea>
+                        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
+                        <input type="text" name="name" placeholder="Twoje imię, nazwisko lub nazwa firmy" aria-label="Twoje imię, nazwisko lub nazwa firmy" autocomplete="name" required class="w-full bg-background border-4 border-textMain p-4 font-bold outline-none focus:bg-white transition-none">
+                        <input type="email" name="email" placeholder="Adres e-mail" aria-label="Adres e-mail" autocomplete="email" required class="w-full bg-background border-4 border-textMain p-4 font-bold outline-none focus:bg-white transition-none">
+                        <textarea name="message" rows="4" placeholder="W czym mogę Ci dzisiaj pomóc?" aria-label="W czym mogę Ci dzisiaj pomóc?" required class="w-full bg-background border-4 border-textMain p-4 font-bold outline-none focus:bg-white transition-none resize-none"></textarea>
                         <button id="submit-btn" type="submit" class="bg-accent border-4 border-textMain text-white font-bold text-lg px-8 py-4 shadow-[4px_4px_0px_0px_#111827] lg:hover:bg-textMain lg:hover:text-white active:bg-textMain active:text-white transition-none self-start w-full sm:w-auto mt-2">
                             Wyślij wiadomość
                         </button>
@@ -215,3 +224,5 @@
     </script>
 </body>
 </html>
+ 
+ 

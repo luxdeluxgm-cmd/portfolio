@@ -11,6 +11,14 @@
     <link rel="alternate" hreflang="pl" href="https://jantokarzewski.pl/strony-internetowe">
     <link rel="alternate" hreflang="en" href="https://jantokarzewski.pl/en/websites">
 
+    <link rel="canonical" href="https://jantokarzewski.pl/en/websites">
+
+    <meta property="og:title" content="Jan Tokarzewski | Websites">
+    <meta property="og:description" content="Custom, blazing-fast websites">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jantokarzewski.pl/en/websites">
+    <meta property="og:image" content="https://jantokarzewski.pl/img/og-image.jpg">
+
     <link rel="stylesheet" href="../css/style.css">
 
 </head>
@@ -34,16 +42,16 @@
                 Websites that simply work.
             </h1>
             <p class="text-base sm:text-xl text-textMuted leading-relaxed max-w-5xl mb-8">
-                Do not pay for bloated WordPress templates. I build custom, lightweight, high-converting sites tailored directly to your business needs.
+                Do not pay for bloated WordPress templates. I build fast, lightweight, modern sites tailored directly to your business needs.
             </p>
             <a href="#contact" class="inline-block bg-accent border-4 border-textMain text-white px-8 py-4 font-bold text-base sm:text-lg shadow-[4px_4px_0px_0px_#111827] lg:hover:bg-textMain lg:hover:text-white active:bg-textMain active:text-white transition-none w-full sm:w-auto text-center">
-                Collaboration
+                Get in touch
             </a>
         </section>
 
         <section id="work" class="w-full">
             <div class="flex flex-col sm:flex-row justify-between items-start sm:items-end mb-6 sm:mb-10 border-b-4 border-textMain pb-4 gap-4">
-                <h2 class="text-3xl sm:text-4xl font-bold">Selected Work</h2>
+                <h2 class="text-3xl sm:text-4xl font-bold">Demo projects</h2>
 
                 <div class="flex items-center gap-3">
                     <span id="demo-counter" class="font-bold text-lg px-2">01 / 04</span>
@@ -82,7 +90,7 @@
             <h2 class="text-3xl sm:text-4xl font-bold mb-6 sm:mb-10 border-b-4 border-textMain pb-4">Pricing</h2>
             <div class="bg-btnDark border-4 border-textMain p-6 sm:p-12 shadow-[4px_4px_0px_0px_#111827] sm:shadow-[8px_8px_0px_0px_#111827] text-textMain font-bold text-lg sm:text-2xl leading-relaxed">
                 A custom-coded website costs <span class="bg-accent border-4 border-textMain text-white px-2 sm:px-3 py-1 mx-1 shadow-[2px_2px_0px_0px_#111827] inline-block mb-1 sm:mb-0">$125</span>. <br><br>
-                That covers the layout, the code, and making sure it loads instantly on every phone. If you need something exceptionally large, like a complex e-commerce store or a massive multi-page web app, the cost scales with the scope. Reach out below and tell me what you need.
+                That covers the layout, the code, and a guarantee that the site scores at least 90 on mobile in the Google Lighthouse test. It includes up to 5 pages and 2 rounds of revisions, and delivery usually takes about 2 weeks. Domain and hosting are not included, but I will help you choose and set them up. Later content changes, such as opening hours, I make on request. If you need something exceptionally large, like a complex e-commerce store or a massive multi-page web app, the cost scales with the scope. Reach out below and tell me what you need.
             </div>
         </section>
 
@@ -102,9 +110,10 @@
                     </div>
 
                     <form id="contact-form" action="https://formspree.io/f/xdekqjda" method="POST" class="flex flex-col gap-4 w-full">
-                        <input type="text" name="name" placeholder="Your Name or Company Name" required class="w-full bg-background border-4 border-textMain p-4 font-bold outline-none focus:bg-white transition-none">
-                        <input type="email" name="email" placeholder="Email Address" required class="w-full bg-background border-4 border-textMain p-4 font-bold outline-none focus:bg-white transition-none">
-                        <textarea name="message" rows="4" placeholder="How can I help you today?" required class="w-full bg-background border-4 border-textMain p-4 font-bold outline-none focus:bg-white transition-none resize-none"></textarea>
+                        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
+                        <input type="text" name="name" placeholder="Your Name or Company Name" aria-label="Your Name or Company Name" autocomplete="name" required class="w-full bg-background border-4 border-textMain p-4 font-bold outline-none focus:bg-white transition-none">
+                        <input type="email" name="email" placeholder="Email Address" aria-label="Email Address" autocomplete="email" required class="w-full bg-background border-4 border-textMain p-4 font-bold outline-none focus:bg-white transition-none">
+                        <textarea name="message" rows="4" placeholder="How can I help you today?" aria-label="How can I help you today?" required class="w-full bg-background border-4 border-textMain p-4 font-bold outline-none focus:bg-white transition-none resize-none"></textarea>
                         <button id="submit-btn" type="submit" class="bg-accent border-4 border-textMain text-white font-bold text-lg px-8 py-4 shadow-[4px_4px_0px_0px_#111827] lg:hover:bg-textMain lg:hover:text-white active:bg-textMain active:text-white transition-none self-start w-full sm:w-auto mt-2">
                             Send Message
                         </button>
@@ -168,14 +177,14 @@
             {
                 badge: "AUTO SERVICE",
                 title: "AutoBieżnik Service & Tire Repair",
-                desc: "High-converting auto repair service showcase featuring an appointment booking form, transparent service pricing table, and bold industrial design.",
+                desc: "Professional auto repair service showcase with a built-in appointment booking form and a clear, transparent service price list.",
                 img: "../img/en/autoshop.png",
                 liveUrl: "https://demo.jantokarzewski.pl/en/autoshop"
             },
             {
                 badge: "PERSONAL",
                 title: "Tomasz Bartczak - Movement & Strength",
-                desc: "High-energy landing page for a personal trainer and sports nutritionist. Includes clear pricing tiers, background credential table, and direct inquiry form.",
+                desc: "Dynamic landing page for a personal trainer and sports nutritionist. Includes clear pricing tiers, an about-me section and a direct inquiry form.",
                 img: "../img/en/trainer.png",
                 liveUrl: "https://demo.jantokarzewski.pl/en/trainer"
             }
@@ -189,6 +198,7 @@
             document.getElementById('demo-title').textContent = p.title;
             document.getElementById('demo-desc').textContent = p.desc;
             document.getElementById('demo-img').src = p.img;
+            document.getElementById('demo-img').alt = 'Screenshot of the project: ' + p.title;
             document.getElementById('demo-live').href = p.liveUrl;
             document.getElementById('demo-counter').textContent = `0${currentIndex + 1} / 0${projects.length}`;
         }
@@ -257,3 +267,5 @@
     </script>
 </body>
 </html>
+ 
+ 
