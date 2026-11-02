@@ -108,6 +108,32 @@
             </div>
         </section>
 
+        <section id="faq" class="w-full">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-6 sm:mb-10 border-b-4 border-textMain pb-4">Najczęstsze pytania</h2>
+            <div class="faq flex flex-col gap-4">
+                <details class="faq-item">
+                    <summary>Jakie narzędzia tworzysz?</summary>
+                    <p class="text-textMuted text-base sm:text-lg leading-relaxed">Skrypty i programy, które automatyzują powtarzalną pracę, na przykład generatory plików, czyszczenie i formatowanie danych czy monitorowanie sieci. Przykłady znajdziesz powyżej.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Na jakim systemie działają Twoje programy?</summary>
+                    <p class="text-textMuted text-base sm:text-lg leading-relaxed">Dopasowuję narzędzie do Twojego systemu operacyjnego i do tego, czego potrzebujesz.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Co dostanę na koniec?</summary>
+                    <p class="text-textMuted text-base sm:text-lg leading-relaxed">Gotowy do uruchomienia program oraz, jeśli chcesz, kod źródłowy.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Co, jeśli program zacznie źle działać po odbiorze?</summary>
+                    <p class="text-textMuted text-base sm:text-lg leading-relaxed">Błędy zgłoszone w ciągu dwóch tygodni od odbioru naprawiam bezpłatnie. Nowe funkcje to osobne zlecenie.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Ile to kosztuje?</summary>
+                    <p class="text-textMuted text-base sm:text-lg leading-relaxed">Proste skrypty zaczynają się od 100 zł. Ostateczna cena zależy od zakresu i stopnia skomplikowania zadania, więc opisz mi, czego potrzebujesz, a przygotuję wycenę.</p>
+                </details>
+            </div>
+        </section>
+
         <section id="contact" class="w-full bg-btnDark border-4 border-textMain px-4 py-8 sm:p-12 shadow-[4px_4px_0px_0px_#111827] sm:shadow-[8px_8px_0px_0px_#111827]">
 
             <div class="mb-8 sm:mb-12">
@@ -222,7 +248,33 @@
             }
         });
     </script>
+    <a href="#contact" id="fab" class="fab">Napisz do mnie</a>
+    <script>
+        (function () {
+            var b = document.getElementById('fab');
+            if (!b) return;
+            var far = false, seen = [];
+            function upd() { b.classList.toggle('is-hidden', !far || seen.length > 0); }
+            window.addEventListener('scroll', function () { far = window.scrollY > 400; upd(); }, { passive: true });
+            if ('IntersectionObserver' in window) {
+                var io = new IntersectionObserver(function (es) {
+                    es.forEach(function (e) {
+                        var i = seen.indexOf(e.target);
+                        if (e.isIntersecting && i < 0) seen.push(e.target);
+                        if (!e.isIntersecting && i >= 0) seen.splice(i, 1);
+                    });
+                    upd();
+                });
+                var c = document.getElementById('contact'), f = document.querySelector('footer');
+                if (c) io.observe(c);
+                if (f) io.observe(f);
+            }
+            upd();
+        })();
+    </script>
 </body>
 </html>
+ 
+ 
  
  

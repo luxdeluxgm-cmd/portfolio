@@ -94,6 +94,36 @@
             </div>
         </section>
 
+        <section id="faq" class="w-full">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-6 sm:mb-10 border-b-4 border-textMain pb-4">Common questions</h2>
+            <div class="faq flex flex-col gap-4">
+                <details class="faq-item">
+                    <summary>What do you build websites with?</summary>
+                    <p class="text-textMuted text-base sm:text-lg leading-relaxed">I hand-code them in HTML, JavaScript and Tailwind CSS, with no WordPress and no ready-made templates. That keeps the sites light and fast.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Do I need hosting and a domain?</summary>
+                    <p class="text-textMuted text-base sm:text-lg leading-relaxed">Yes, a website needs a place to live and an address. Hosting and domain are not included in the price, but I will help you choose and set them up.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>How long does a website take?</summary>
+                    <p class="text-textMuted text-base sm:text-lg leading-relaxed">Usually about 2 weeks, depending on the scope.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>How many revisions are included?</summary>
+                    <p class="text-textMuted text-base sm:text-lg leading-relaxed">The price covers up to 5 pages and 2 rounds of revisions.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Who changes the content after launch?</summary>
+                    <p class="text-textMuted text-base sm:text-lg leading-relaxed">Later content changes, such as opening hours, I make on request.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Will the site work on a phone?</summary>
+                    <p class="text-textMuted text-base sm:text-lg leading-relaxed">Yes. I build every site to work on phones, tablets and computers, and I test it at different screen widths before I hand it over.</p>
+                </details>
+            </div>
+        </section>
+
         <section id="contact" class="w-full bg-btnDark border-4 border-textMain px-4 py-8 sm:p-12 shadow-[4px_4px_0px_0px_#111827] sm:shadow-[8px_8px_0px_0px_#111827]">
 
             <div class="mb-8 sm:mb-12">
@@ -265,5 +295,30 @@
             }
         });
     </script>
+    <a href="#contact" id="fab" class="fab">Get in touch</a>
+    <script>
+        (function () {
+            var b = document.getElementById('fab');
+            if (!b) return;
+            var far = false, seen = [];
+            function upd() { b.classList.toggle('is-hidden', !far || seen.length > 0); }
+            window.addEventListener('scroll', function () { far = window.scrollY > 400; upd(); }, { passive: true });
+            if ('IntersectionObserver' in window) {
+                var io = new IntersectionObserver(function (es) {
+                    es.forEach(function (e) {
+                        var i = seen.indexOf(e.target);
+                        if (e.isIntersecting && i < 0) seen.push(e.target);
+                        if (!e.isIntersecting && i >= 0) seen.splice(i, 1);
+                    });
+                    upd();
+                });
+                var c = document.getElementById('contact'), f = document.querySelector('footer');
+                if (c) io.observe(c);
+                if (f) io.observe(f);
+            }
+            upd();
+        })();
+    </script>
 </body>
-</html>
+</html> 
+ 

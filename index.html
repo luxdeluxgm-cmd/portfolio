@@ -36,7 +36,6 @@
 
         <div class="sm:hidden flex gap-2 font-bold text-sm items-center">
             <a href="#services" class="lg:hover:bg-accent active:bg-accent px-1 transition-none">Usługi</a>
-            <a href="#contact" class="lg:hover:bg-accent active:bg-accent px-1 transition-none">Kontakt</a>
             <a href="en/index.html" class="px-2 py-0.5 border-2 border-textMain text-xs font-bold bg-btnDark lg:hover:bg-accent active:bg-accent shadow-[2px_2px_0px_0px_#111827] transition-none ml-1">EN</a>
         </div>
     </nav>
@@ -104,6 +103,32 @@
                     <span class="font-bold border-b-2 border-textMain pb-1 inline-block group-hover:border-textMain">Sprawdź szczegóły</span>
                 </a>
                 
+            </div>
+        </section>
+
+        <section id="faq" class="w-full">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-6 sm:mb-10 border-b-4 border-textMain pb-4">Najczęstsze pytania</h2>
+            <div class="faq flex flex-col gap-4">
+                <details class="faq-item">
+                    <summary>Jak zacząć współpracę?</summary>
+                    <p class="text-textMuted text-base sm:text-lg leading-relaxed">Napisz do mnie przez formularz poniżej albo zadzwoń i opisz krótko, czego potrzebujesz. Odpowiem w ciągu 24 godzin i zaproponuję kolejne kroki oraz wycenę.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>A jeśli zadzwonię, a Ty nie odbierzesz?</summary>
+                    <p class="text-textMuted text-base sm:text-lg leading-relaxed">Nie zawsze mogę odebrać od razu, ale oddzwonię w ciągu 24 godzin.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Czy pracujesz z klientami spoza Polski?</summary>
+                    <p class="text-textMuted text-base sm:text-lg leading-relaxed">Tak, od tego jest angielska wersja tej strony. Pracuję w czasie środkowoeuropejskim (Warszawa: UTC+1 zimą, UTC+2 latem), a z klientami zagranicznymi komunikuję się po angielsku.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Jak rozliczasz się z klientami?</summary>
+                    <p class="text-textMuted text-base sm:text-lg leading-relaxed">[TO BE ADDED]</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Od czego zacząć: strona czy skrypt?</summary>
+                    <p class="text-textMuted text-base sm:text-lg leading-relaxed">To zależy od problemu. Jeśli potrzebujesz strony dla firmy, wybierz stronę internetową. Jeśli chcesz zautomatyzować powtarzalną pracę, na przykład porządkowanie danych lub generowanie plików, wybierz skrypt. Nie wiesz, co będzie lepsze? Opisz mi swój problem, a doradzę.</p>
+                </details>
             </div>
         </section>
 
@@ -221,8 +246,34 @@
             }
         });
     </script>
+    <a href="#contact" id="fab" class="fab">Napisz do mnie</a>
+    <script>
+        (function () {
+            var b = document.getElementById('fab');
+            if (!b) return;
+            var far = false, seen = [];
+            function upd() { b.classList.toggle('is-hidden', !far || seen.length > 0); }
+            window.addEventListener('scroll', function () { far = window.scrollY > 400; upd(); }, { passive: true });
+            if ('IntersectionObserver' in window) {
+                var io = new IntersectionObserver(function (es) {
+                    es.forEach(function (e) {
+                        var i = seen.indexOf(e.target);
+                        if (e.isIntersecting && i < 0) seen.push(e.target);
+                        if (!e.isIntersecting && i >= 0) seen.splice(i, 1);
+                    });
+                    upd();
+                });
+                var c = document.getElementById('contact'), f = document.querySelector('footer');
+                if (c) io.observe(c);
+                if (f) io.observe(f);
+            }
+            upd();
+        })();
+    </script>
 </body>
 </html>
+ 
+ 
  
  
  

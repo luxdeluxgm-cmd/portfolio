@@ -94,6 +94,36 @@
             </div>
         </section>
 
+        <section id="faq" class="w-full">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-6 sm:mb-10 border-b-4 border-textMain pb-4">Najczęstsze pytania</h2>
+            <div class="faq flex flex-col gap-4">
+                <details class="faq-item">
+                    <summary>W czym tworzysz strony?</summary>
+                    <p class="text-textMuted text-base sm:text-lg leading-relaxed">Piszę je ręcznie w HTML, JavaScript i Tailwind CSS, bez WordPressa i gotowych szablonów. Dzięki temu strony są lekkie i szybkie.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Czy potrzebuję hostingu i domeny?</summary>
+                    <p class="text-textMuted text-base sm:text-lg leading-relaxed">Tak, strona musi gdzieś działać i mieć adres. Domena i hosting nie są wliczone w cenę, ale pomogę Ci je wybrać i skonfigurować.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Ile trwa wykonanie strony?</summary>
+                    <p class="text-textMuted text-base sm:text-lg leading-relaxed">Zwykle około 2 tygodni, w zależności od zakresu.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Ile poprawek obejmuje cena?</summary>
+                    <p class="text-textMuted text-base sm:text-lg leading-relaxed">Cena obejmuje do 5 podstron i 2 rundy poprawek.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Kto zmienia treść strony po wdrożeniu?</summary>
+                    <p class="text-textMuted text-base sm:text-lg leading-relaxed">Późniejsze zmiany treści, na przykład godzin otwarcia, wprowadzam na zlecenie.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Czy strona będzie dobrze wyglądać na telefonie?</summary>
+                    <p class="text-textMuted text-base sm:text-lg leading-relaxed">Tak. Każdą stronę projektuję tak, aby działała na telefonie, tablecie i komputerze, i sprawdzam ją na różnych szerokościach ekranu przed oddaniem.</p>
+                </details>
+            </div>
+        </section>
+
         <section id="contact" class="w-full bg-btnDark border-4 border-textMain px-4 py-8 sm:p-12 shadow-[4px_4px_0px_0px_#111827] sm:shadow-[8px_8px_0px_0px_#111827]">
 
             <div class="mb-8 sm:mb-12">
@@ -260,5 +290,30 @@
             }
         });
     </script>
+    <a href="#contact" id="fab" class="fab">Napisz do mnie</a>
+    <script>
+        (function () {
+            var b = document.getElementById('fab');
+            if (!b) return;
+            var far = false, seen = [];
+            function upd() { b.classList.toggle('is-hidden', !far || seen.length > 0); }
+            window.addEventListener('scroll', function () { far = window.scrollY > 400; upd(); }, { passive: true });
+            if ('IntersectionObserver' in window) {
+                var io = new IntersectionObserver(function (es) {
+                    es.forEach(function (e) {
+                        var i = seen.indexOf(e.target);
+                        if (e.isIntersecting && i < 0) seen.push(e.target);
+                        if (!e.isIntersecting && i >= 0) seen.splice(i, 1);
+                    });
+                    upd();
+                });
+                var c = document.getElementById('contact'), f = document.querySelector('footer');
+                if (c) io.observe(c);
+                if (f) io.observe(f);
+            }
+            upd();
+        })();
+    </script>
 </body>
-</html>
+</html> 
+ 
