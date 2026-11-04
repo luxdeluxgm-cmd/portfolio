@@ -6,7 +6,7 @@
 
     <title>Jan Tokarzewski | Strony Internetowe</title>
     <link rel="icon" type="image/png" href="img/favicon.png">
-    <meta name="description" content="Autorskie, błyskawiczne strony internetowe">
+    <meta name="description" content="Autorskie, błyskawiczne strony internetowe pisane od zera, bez WordPressa i gotowych szablonów. Strona za 499 zł z gwarancją min. 90 pkt w Lighthouse.">
 
     <link rel="alternate" hreflang="pl" href="https://jantokarzewski.pl/strony-internetowe">
     <link rel="alternate" hreflang="en" href="https://jantokarzewski.pl/en/websites">
@@ -14,14 +14,20 @@
     <link rel="canonical" href="https://jantokarzewski.pl/strony-internetowe">
 
     <meta property="og:title" content="Jan Tokarzewski | Strony Internetowe">
-    <meta property="og:description" content="Autorskie, błyskawiczne strony internetowe">
+    <meta property="og:description" content="Autorskie, błyskawiczne strony internetowe pisane od zera, bez WordPressa i gotowych szablonów. Strona za 499 zł z gwarancją min. 90 pkt w Lighthouse.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://jantokarzewski.pl/strony-internetowe">
-    <meta property="og:image" content="https://jantokarzewski.pl/img/og-image.jpg">
+    <meta property="og:site_name" content="Jan Tokarzewski">
+    <meta property="og:locale" content="pl_PL">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:image" content="https://jantokarzewski.pl/img/pl/og-img-websites.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="2400">
+    <meta property="og:image:height" content="1260">
+    <meta property="og:image:alt" content="Strony internetowe – lekkie i responsywne strony internetowe. jantokarzewski.pl/strony-internetowe">
+    <meta name="twitter:card" content="summary_large_image">
 
     <link rel="stylesheet" href="css/style.css">
-
-    <meta property="og:image" content="img/pl/og-image-websites.png">
 
 </head>
 <body class="bg-background text-textMain font-sans antialiased flex flex-col min-h-screen overflow-x-hidden">
@@ -34,7 +40,7 @@
         <div class="font-bold text-lg hidden sm:block" style="margin-left:auto;margin-right:1rem">
             Strony Internetowe
         </div>
-        <a href="en/websites.html" class="px-2 py-1 border-2 border-textMain text-sm font-bold bg-btnDark lg:hover:bg-accent active:bg-accent shadow-[2px_2px_0px_0px_#111827] transition-none ml-2">EN</a>
+        <a href="en/websites.html" lang="en" hreflang="en" aria-label="English version" class="px-2 py-1 border-2 border-textMain text-sm font-bold bg-btnDark lg:hover:bg-accent active:bg-accent shadow-[2px_2px_0px_0px_#111827] transition-none ml-2">EN</a>
     </nav>
 
     <main class="flex-grow flex flex-col items-center w-full max-w-7xl mx-auto space-y-12 sm:space-y-20 px-3 sm:px-6 py-8 sm:py-12">
@@ -68,7 +74,7 @@
 
             <div class="bg-btnDark border-4 border-textMain p-4 sm:p-8 shadow-[4px_4px_0px_0px_#111827] sm:shadow-[8px_8px_0px_0px_#111827] flex flex-col lg:flex-row gap-6 sm:gap-8">
                 <div class="w-full lg:w-1/2 border-4 border-textMain overflow-hidden shadow-[4px_4px_0px_0px_#111827] bg-[#e5e7eb] flex items-center justify-center min-h-[200px] sm:min-h-[340px]">
-                    <img id="demo-img" src="img/pl/kwiaciarnia.webp" alt="Zrzut ekranu projektu" class="w-full h-full object-cover">
+                    <img id="demo-img" src="img/pl/kwiaciarnia.webp" alt="Zrzut ekranu projektu: Kwiaciarnia „Zielony Zakątek”" class="w-full h-full object-cover">
                 </div>
 
                 <div class="w-full lg:w-1/2 flex flex-col justify-center text-left">
@@ -153,7 +159,7 @@
                         <input type="text" name="name" placeholder="Twoje imię, nazwisko lub nazwa firmy" aria-label="Twoje imię, nazwisko lub nazwa firmy" autocomplete="name" required class="w-full bg-background border-4 border-textMain p-4 font-bold outline-none focus:bg-white transition-none">
                         <input type="email" name="email" placeholder="Adres e-mail" aria-label="Adres e-mail" autocomplete="email" required class="w-full bg-background border-4 border-textMain p-4 font-bold outline-none focus:bg-white transition-none">
                         <textarea name="message" rows="4" placeholder="W czym mogę Ci dzisiaj pomóc?" aria-label="W czym mogę Ci dzisiaj pomóc?" required class="w-full bg-background border-4 border-textMain p-4 font-bold outline-none focus:bg-white transition-none resize-none"></textarea>
-                        <button id="submit-btn" type="submit" class="bg-accent border-4 border-textMain text-white font-bold text-lg px-8 py-4 shadow-[4px_4px_0px_0px_#111827] lg:hover:bg-textMain lg:hover:text-white active:bg-textMain active:text-white transition-none self-start w-full sm:w-auto mt-2">
+                        <button id="submit-btn" aria-live="polite" type="submit" class="bg-accent border-4 border-textMain text-white font-bold text-lg px-8 py-4 shadow-[4px_4px_0px_0px_#111827] lg:hover:bg-textMain lg:hover:text-white active:bg-textMain active:text-white transition-none self-start w-full sm:w-auto mt-2">
                             Wyślij wiadomość
                         </button>
                     </form>

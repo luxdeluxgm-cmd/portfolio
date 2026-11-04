@@ -6,18 +6,25 @@
 
     <title>Jan Tokarzewski | Scripts, Web &amp; Data</title>
     <link rel="icon" type="image/png" href="../img/favicon.png">
-    <meta name="description" content="Custom websites, automation, and data formatting.">
+    <meta name="description" content="Computer science student at WULS. I build fast, custom-coded websites, write scripts, and automate tedious tasks and data formatting.">
     <link rel="canonical" href="https://jantokarzewski.pl/en/">
 
     <meta property="og:title" content="Jan Tokarzewski | Scripts, Web &amp; Data">
     <meta property="og:description" content="I take on the tech tasks that are wasting your time.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://jantokarzewski.pl/en/">
+    <meta property="og:site_name" content="Jan Tokarzewski">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="pl_PL">
+    <meta property="og:image" content="https://jantokarzewski.pl/img/en/og-img-main-en.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="2400">
+    <meta property="og:image:height" content="1260">
+    <meta property="og:image:alt" content="Websites and automation scripts. jantokarzewski.pl/en">
+    <meta name="twitter:card" content="summary_large_image">
 
     <link rel="alternate" hreflang="pl" href="https://jantokarzewski.pl/">
     <link rel="alternate" hreflang="en" href="https://jantokarzewski.pl/en/">
-
-    <meta property="og:image" content="img/en/og-image-main-en.png">
 
     <link rel="stylesheet" href="../css/style.css">
 
@@ -30,12 +37,12 @@
         <div class="hidden sm:flex gap-8 font-bold text-lg items-center">
             <a href="#services" class="lg:hover:bg-accent active:bg-accent px-2 transition-none">Services</a>
             <a href="#contact" class="lg:hover:bg-accent active:bg-accent px-2 transition-none">Contact</a>
-            <a href="../index.html" class="px-2 py-1 border-2 border-textMain text-sm font-bold bg-btnDark lg:hover:bg-accent active:bg-accent shadow-[2px_2px_0px_0px_#111827] transition-none ml-2">PL</a>
+            <a href="../index.html" lang="pl" hreflang="pl" aria-label="Wersja polska" class="px-2 py-1 border-2 border-textMain text-sm font-bold bg-btnDark lg:hover:bg-accent active:bg-accent shadow-[2px_2px_0px_0px_#111827] transition-none ml-2">PL</a>
         </div>
 
         <div class="sm:hidden flex gap-2 font-bold text-sm items-center">
             <a href="#services" class="lg:hover:bg-accent active:bg-accent px-1 transition-none">Services</a>
-            <a href="../index.html" class="px-2 py-0.5 border-2 border-textMain text-xs font-bold bg-btnDark lg:hover:bg-accent active:bg-accent shadow-[2px_2px_0px_0px_#111827] transition-none ml-1">PL</a>
+            <a href="../index.html" lang="pl" hreflang="pl" aria-label="Wersja polska" class="px-2 py-0.5 border-2 border-textMain text-xs font-bold bg-btnDark lg:hover:bg-accent active:bg-accent shadow-[2px_2px_0px_0px_#111827] transition-none ml-1">PL</a>
         </div>
     </nav>
 
@@ -44,7 +51,7 @@
         <section class="w-full bg-btnDark border-4 border-textMain px-4 py-8 sm:p-12 shadow-[4px_4px_0px_0px_#111827] sm:shadow-[8px_8px_0px_0px_#111827] flex flex-col lg:flex-row items-center lg:items-start gap-8 lg:gap-12 mt-2 sm:mt-10">
 
             <div class="flex-shrink-0">
-                <img src="https://rmi.msu.edu/_assets/images/placeholder/placeholder-400x400.jpg" alt="Jan Tokarzewski" class="w-32 h-32 sm:w-72 sm:h-72 border-4 border-textMain object-cover shadow-[4px_4px_0px_0px_#111827]">
+                <img src="../img/profile.webp" alt="My photo" width="576" height="576" fetchpriority="high" decoding="async" class="w-32 h-32 sm:w-72 sm:h-72 border-4 border-textMain object-cover shadow-[4px_4px_0px_0px_#111827]">
             </div>
 
             <div class="flex flex-col justify-center text-center lg:text-left w-full">
@@ -172,7 +179,7 @@
                         <input type="text" name="name" placeholder="Your Name or Company Name" aria-label="Your Name or Company Name" autocomplete="name" required class="w-full bg-background border-4 border-textMain p-4 font-bold outline-none focus:bg-white transition-none">
                         <input type="email" name="email" placeholder="Email Address" aria-label="Email Address" autocomplete="email" required class="w-full bg-background border-4 border-textMain p-4 font-bold outline-none focus:bg-white transition-none">
                         <textarea name="message" rows="4" placeholder="How can I help you today?" aria-label="How can I help you today?" required class="w-full bg-background border-4 border-textMain p-4 font-bold outline-none focus:bg-white transition-none resize-none"></textarea>
-                        <button id="submit-btn" type="submit" class="bg-accent border-4 border-textMain text-white font-bold text-lg px-8 py-4 shadow-[4px_4px_0px_0px_#111827] lg:hover:bg-textMain lg:hover:text-white active:bg-textMain active:text-white transition-none self-start w-full sm:w-auto mt-2">
+                        <button id="submit-btn" aria-live="polite" type="submit" class="bg-accent border-4 border-textMain text-white font-bold text-lg px-8 py-4 shadow-[4px_4px_0px_0px_#111827] lg:hover:bg-textMain lg:hover:text-white active:bg-textMain active:text-white transition-none self-start w-full sm:w-auto mt-2">
                             Send Message
                         </button>
                     </form>
@@ -194,12 +201,7 @@
                             <span id="email-grid-text" class="text-xs font-sans mt-1">Click to copy</span>
                         </button>
 
-                        <a href="https://www.reddit.com/user/Aggressive_Bed3169/" target="_blank" rel="noopener noreferrer" class="w-full h-full bg-btnDark border-4 border-textMain lg:hover:bg-accent active:bg-accent p-4 flex flex-col items-center justify-center transition-none shadow-[4px_4px_0px_0px_#111827]">
-                            <span class="font-display text-lg sm:text-xl font-bold">Reddit</span>
-                            <span class="text-xs font-sans mt-1">My profile</span>
-                        </a>
-
-                        <a href="https://useme.com/en/roles/contractor/jantokarzewski,704217/" target="_blank" rel="noopener noreferrer" class="w-full h-full bg-btnDark border-4 border-textMain lg:hover:bg-accent active:bg-accent p-4 flex flex-col items-center justify-center transition-none shadow-[4px_4px_0px_0px_#111827]">
+                        <a href="https://useme.com/en/roles/contractor/jantokarzewski,704217/" target="_blank" rel="noopener noreferrer" class="w-full h-full sm:col-span-2 bg-btnDark border-4 border-textMain lg:hover:bg-accent active:bg-accent p-4 flex flex-col items-center justify-center transition-none shadow-[4px_4px_0px_0px_#111827]">
                             <span class="font-display text-lg sm:text-xl font-bold">Useme</span>
                             <span class="text-xs font-sans mt-1">B2B Invoice</span>
                         </a>
