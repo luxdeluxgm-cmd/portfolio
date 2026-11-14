@@ -10,6 +10,7 @@
 
     <link rel="alternate" hreflang="pl" href="https://jantokarzewski.pl/strony-internetowe">
     <link rel="alternate" hreflang="en" href="https://jantokarzewski.pl/en/websites">
+    <link rel="alternate" hreflang="x-default" href="https://jantokarzewski.pl/en/websites">
 
     <link rel="canonical" href="https://jantokarzewski.pl/en/websites">
 
@@ -27,20 +28,21 @@
     <meta property="og:image:alt" content="Websites – light and responsive websites. jantokarzewski.pl/websites">
     <meta name="twitter:card" content="summary_large_image">
 
+    <link rel="preload" href="/fonts/CascadiaCode.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="../css/style.css">
 
 </head>
 <body class="bg-background text-textMain font-sans antialiased flex flex-col min-h-screen overflow-x-hidden">
 
     <nav class="w-full py-4 px-4 sm:py-6 sm:px-12 flex justify-between items-center max-w-7xl mx-auto border-b-4 border-textMain bg-background sticky top-0 z-50 shadow-sm">
-      <a href="index.html" class="flex flex-col px-2 lg:hover:bg-accent active:bg-accent transition-none w-max">
+      <a href="/en/" class="flex flex-col px-2 lg:hover:bg-accent lg:hover:text-white active:bg-accent active:text-white transition-none w-max">
         <span class="font-display text-xl sm:text-2xl font-bold whitespace-nowrap">Jan Tokarzewski</span>
         <span class="text-xs font-sans font-bold mt-0.5">Home</span>
       </a>
         <div class="font-bold text-lg hidden sm:block" style="margin-left:auto;margin-right:1rem">
             Websites
         </div>
-        <a href="../strony-internetowe.html" lang="pl" hreflang="pl" aria-label="Wersja polska" class="px-2 py-1 border-2 border-textMain text-sm font-bold bg-btnDark lg:hover:bg-accent active:bg-accent shadow-[2px_2px_0px_0px_#111827] transition-none ml-2">PL</a>
+        <a href="/strony-internetowe" lang="pl" hreflang="pl" aria-label="Wersja polska" class="px-2 py-1 border-2 border-textMain text-sm font-bold bg-btnDark lg:hover:bg-accent lg:hover:text-white active:bg-accent active:text-white shadow-[2px_2px_0px_0px_#111827] transition-none ml-2">PL</a>
     </nav>
 
     <main class="flex-grow flex flex-col items-center w-full max-w-7xl mx-auto space-y-12 sm:space-y-20 px-3 sm:px-6 py-8 sm:py-12">
@@ -62,11 +64,11 @@
                 <h2 class="text-3xl sm:text-4xl font-bold">Demo projects</h2>
 
                 <div class="flex items-center gap-3">
-                    <span id="demo-counter" class="font-bold text-lg px-2">01 / 04</span>
-                    <button onclick="prevProject()" aria-label="Previous project" class="w-12 h-12 flex justify-center items-center bg-btnDark border-4 border-textMain shadow-[4px_4px_0px_0px_#111827] lg:hover:bg-accent active:bg-accent active:translate-x-1 active:translate-y-1 transition-none font-bold text-xl cursor-pointer">
+                    <span id="demo-counter" aria-live="polite" class="font-bold text-lg px-2">01 / 04</span>
+                    <button type="button" onclick="prevProject()" aria-label="Previous project" class="w-12 h-12 flex justify-center items-center bg-btnDark border-4 border-textMain shadow-[4px_4px_0px_0px_#111827] lg:hover:bg-accent lg:hover:text-white active:bg-accent active:text-white active:translate-x-1 active:translate-y-1 transition-none font-bold text-xl cursor-pointer">
                         ←
                     </button>
-                    <button onclick="nextProject()" aria-label="Next project" class="w-12 h-12 flex justify-center items-center bg-btnDark border-4 border-textMain shadow-[4px_4px_0px_0px_#111827] lg:hover:bg-accent active:bg-accent active:translate-x-1 active:translate-y-1 transition-none font-bold text-xl cursor-pointer">
+                    <button type="button" onclick="nextProject()" aria-label="Next project" class="w-12 h-12 flex justify-center items-center bg-btnDark border-4 border-textMain shadow-[4px_4px_0px_0px_#111827] lg:hover:bg-accent lg:hover:text-white active:bg-accent active:text-white active:translate-x-1 active:translate-y-1 transition-none font-bold text-xl cursor-pointer">
                         →
                     </button>
                 </div>
@@ -74,7 +76,7 @@
 
             <div class="bg-btnDark border-4 border-textMain p-4 sm:p-8 shadow-[4px_4px_0px_0px_#111827] sm:shadow-[8px_8px_0px_0px_#111827] flex flex-col lg:flex-row gap-6 sm:gap-8">
                 <div class="w-full lg:w-1/2 border-4 border-textMain overflow-hidden shadow-[4px_4px_0px_0px_#111827] bg-[#e5e7eb] flex items-center justify-center min-h-[200px] sm:min-h-[340px]">
-                    <img id="demo-img" src="../img/en/flowershop.webp" alt="Screenshot of the project: Green Corner Florist" class="w-full h-full object-cover">
+                    <img id="demo-img" src="../img/en/flowershop.webp" alt="Screenshot of the project: Green Corner Florist" width="3840" height="2160" decoding="async" class="w-full h-full object-cover">
                 </div>
 
                 <div class="w-full lg:w-1/2 flex flex-col justify-center text-left">
@@ -167,22 +169,22 @@
                     </div>
 
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 w-full">
-                        <a href="tel:+48508506353" class="w-full h-full bg-btnDark border-4 border-textMain lg:hover:bg-accent active:bg-accent p-4 flex flex-col items-center justify-center transition-none shadow-[4px_4px_0px_0px_#111827]">
+                        <a href="tel:+48508506353" class="w-full h-full bg-btnDark border-4 border-textMain lg:hover:bg-accent lg:hover:text-white active:bg-accent active:text-white p-4 flex flex-col items-center justify-center transition-none shadow-[4px_4px_0px_0px_#111827]">
                             <span class="font-display text-lg sm:text-xl font-bold">Phone</span>
                             <span class="text-xs font-sans mt-1">Direct call</span>
                         </a>
 
-                        <button onclick="copyEmail()" class="w-full h-full bg-btnDark border-4 border-textMain lg:hover:bg-accent active:bg-accent p-4 flex flex-col items-center justify-center transition-none shadow-[4px_4px_0px_0px_#111827]">
+                        <button type="button" onclick="copyEmail()" class="w-full h-full bg-btnDark border-4 border-textMain lg:hover:bg-accent lg:hover:text-white active:bg-accent active:text-white p-4 flex flex-col items-center justify-center transition-none shadow-[4px_4px_0px_0px_#111827]">
                             <span class="font-display text-lg sm:text-xl font-bold">Email</span>
-                            <span id="email-grid-text" class="text-xs font-sans mt-1">Click to copy</span>
+                            <span id="email-grid-text" aria-live="polite" class="text-xs font-sans mt-1">Click to copy</span>
                         </button>
 
-                        <a href="https://useme.com/en/roles/contractor/jantokarzewski,704217/" target="_blank" rel="noopener noreferrer" class="w-full h-full sm:col-span-2 bg-btnDark border-4 border-textMain lg:hover:bg-accent active:bg-accent p-4 flex flex-col items-center justify-center transition-none shadow-[4px_4px_0px_0px_#111827]">
+                        <a href="https://useme.com/en/roles/contractor/jantokarzewski,704217/" target="_blank" rel="noopener noreferrer" class="w-full h-full sm:col-span-2 bg-btnDark border-4 border-textMain lg:hover:bg-accent lg:hover:text-white active:bg-accent active:text-white p-4 flex flex-col items-center justify-center transition-none shadow-[4px_4px_0px_0px_#111827]">
                             <span class="font-display text-lg sm:text-xl font-bold">Useme</span>
                             <span class="text-xs font-sans mt-1">B2B Invoice</span>
                         </a>
                     </div>
-                    <p class="mt-8 font-bold text-sm sm:text-base">I use these details only to reply to your message. More:  <a href="privacy-policy.html" class="lg:hover:text-accent active:text-accent transition-none">privacy policy</a>.</p>
+                    <p class="mt-8 font-bold text-sm sm:text-base">I use these details only to reply to your message. More:  <a href="/en/privacy-policy" class="lg:hover:text-accent active:text-accent transition-none">privacy policy</a>.</p>
                 </div>
             </div>
         </section>
@@ -190,8 +192,8 @@
     </main>
 
     <footer class="w-full py-8 text-center border-t-4 border-textMain bg-textMain text-background mt-auto">
-        <p class="font-bold text-sm sm:text-base">© 2026 Jan Tokarzewski<a href="cat.html" class="lg:hover:text-accent active:text-accent transition-none">.</a></p>
-        <a href="privacy-policy.html" class="text-xs sm:text-sm underline hover:opacity-80 transition-opacity">Privacy policy</a>
+        <p class="font-bold text-sm sm:text-base">© 2026 Jan Tokarzewski<a href="/en/cat" class="lg:hover:text-accent active:text-accent transition-none">.</a></p>
+        <a href="/en/privacy-policy" class="text-xs sm:text-sm underline hover:opacity-80 transition-opacity">Privacy policy</a>
     </footer>
 
     <script>
@@ -227,6 +229,13 @@
         ];
 
         let currentIndex = 0;
+
+        window.addEventListener('load', () => {
+            projects.slice(1).forEach(p => {
+                const img = new Image();
+                img.src = p.img;
+            });
+        });
 
         function updateSlide() {
             const p = projects[currentIndex];
@@ -268,11 +277,14 @@
 
         const contactForm = document.getElementById('contact-form');
         const submitBtn = document.getElementById('submit-btn');
+        const defaultBtnText = submitBtn.textContent.trim();
+        let resetTimer = null;
 
         contactForm.addEventListener('submit', async function(e) {
             e.preventDefault();
 
-            const originalBtnText = submitBtn.textContent;
+            if (resetTimer) clearTimeout(resetTimer);
+            submitBtn.disabled = true;
             submitBtn.textContent = "Sending...";
 
             const formData = new FormData(contactForm);
@@ -292,12 +304,14 @@
                     submitBtn.classList.add('bg-textMain', 'text-white', 'pointer-events-none');
                     contactForm.reset();
                 } else {
+                    submitBtn.disabled = false;
                     submitBtn.textContent = "Error. Try again.";
-                    setTimeout(() => { submitBtn.textContent = originalBtnText; }, 3000);
+                    resetTimer = setTimeout(() => { submitBtn.textContent = defaultBtnText; }, 3000);
                 }
             } catch (error) {
+                submitBtn.disabled = false;
                 submitBtn.textContent = "Error. Try again.";
-                setTimeout(() => { submitBtn.textContent = originalBtnText; }, 3000);
+                resetTimer = setTimeout(() => { submitBtn.textContent = defaultBtnText; }, 3000);
             }
         });
     </script>

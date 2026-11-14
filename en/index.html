@@ -25,24 +25,26 @@
 
     <link rel="alternate" hreflang="pl" href="https://jantokarzewski.pl/">
     <link rel="alternate" hreflang="en" href="https://jantokarzewski.pl/en/">
+    <link rel="alternate" hreflang="x-default" href="https://jantokarzewski.pl/en/">
 
+    <link rel="preload" href="/fonts/CascadiaCode.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="../css/style.css">
 
 </head>
 <body class="bg-background text-textMain font-sans antialiased flex flex-col min-h-screen overflow-x-hidden">
 
     <nav class="w-full py-4 px-4 sm:py-6 sm:px-12 flex justify-between items-center max-w-7xl mx-auto border-b-4 border-textMain bg-background sticky top-0 z-50 shadow-sm">
-        <a href="#" class="font-display text-xl sm:text-2xl font-bold lg:hover:bg-accent active:bg-accent px-2 transition-none whitespace-nowrap">Jan Tokarzewski</a>
+        <a href="#" class="font-display text-xl sm:text-2xl font-bold lg:hover:bg-accent lg:hover:text-white active:bg-accent active:text-white px-2 transition-none whitespace-nowrap">Jan Tokarzewski</a>
 
         <div class="hidden sm:flex gap-8 font-bold text-lg items-center">
-            <a href="#services" class="lg:hover:bg-accent active:bg-accent px-2 transition-none">Services</a>
-            <a href="#contact" class="lg:hover:bg-accent active:bg-accent px-2 transition-none">Contact</a>
-            <a href="../index.html" lang="pl" hreflang="pl" aria-label="Wersja polska" class="px-2 py-1 border-2 border-textMain text-sm font-bold bg-btnDark lg:hover:bg-accent active:bg-accent shadow-[2px_2px_0px_0px_#111827] transition-none ml-2">PL</a>
+            <a href="#services" class="lg:hover:bg-accent lg:hover:text-white active:bg-accent active:text-white px-2 transition-none">Services</a>
+            <a href="#contact" class="lg:hover:bg-accent lg:hover:text-white active:bg-accent active:text-white px-2 transition-none">Contact</a>
+            <a href="/" lang="pl" hreflang="pl" aria-label="Wersja polska" class="px-2 py-1 border-2 border-textMain text-sm font-bold bg-btnDark lg:hover:bg-accent lg:hover:text-white active:bg-accent active:text-white shadow-[2px_2px_0px_0px_#111827] transition-none ml-2">PL</a>
         </div>
 
         <div class="sm:hidden flex gap-2 font-bold text-sm items-center">
-            <a href="#services" class="lg:hover:bg-accent active:bg-accent px-1 transition-none">Services</a>
-            <a href="../index.html" lang="pl" hreflang="pl" aria-label="Wersja polska" class="px-2 py-0.5 border-2 border-textMain text-xs font-bold bg-btnDark lg:hover:bg-accent active:bg-accent shadow-[2px_2px_0px_0px_#111827] transition-none ml-1">PL</a>
+            <a href="#services" class="lg:hover:bg-accent lg:hover:text-white active:bg-accent active:text-white px-1 transition-none">Services</a>
+            <a href="/" lang="pl" hreflang="pl" aria-label="Wersja polska" class="px-2 py-0.5 border-2 border-textMain text-xs font-bold bg-btnDark lg:hover:bg-accent lg:hover:text-white active:bg-accent active:text-white shadow-[2px_2px_0px_0px_#111827] transition-none ml-1">PL</a>
         </div>
     </nav>
 
@@ -69,13 +71,13 @@
                     <a href="#contact" class="w-full sm:w-auto bg-accent border-4 border-textMain text-white px-8 py-4 shadow-[4px_4px_0px_0px_#111827] lg:hover:bg-textMain lg:hover:text-white active:bg-textMain active:text-white transition-none text-center">
                         Get in touch
                     </a>
-                    <a href="#services" class="w-full sm:w-auto bg-background border-4 border-textMain text-textMain px-8 py-4 shadow-[4px_4px_0px_0px_#111827] lg:hover:bg-accent active:bg-accent transition-none text-center">
+                    <a href="#services" class="w-full sm:w-auto bg-background border-4 border-textMain text-textMain px-8 py-4 shadow-[4px_4px_0px_0px_#111827] lg:hover:bg-accent lg:hover:text-white active:bg-accent active:text-white transition-none text-center">
                         See what I can do
                     </a>
 
                     <div class="flex gap-4 sm:ml-2 w-full sm:w-auto justify-center mt-2 sm:mt-0">
-                        <a href="https://github.com/luxdeluxgm-cmd" aria-label="GitHub" target="_blank" rel="noopener noreferrer" class="w-[50px] h-[50px] sm:w-[60px] sm:h-[60px] flex justify-center items-center bg-btnDark border-4 border-textMain shadow-[4px_4px_0px_0px_#111827] lg:hover:bg-accent active:bg-accent transition-none group">
-                            <svg class="w-6 h-6 sm:w-7 sm:h-7 text-textMain" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <a href="https://github.com/luxdeluxgm-cmd" aria-label="GitHub" target="_blank" rel="noopener noreferrer" class="w-[50px] h-[50px] sm:w-[60px] sm:h-[60px] flex justify-center items-center bg-btnDark border-4 border-textMain shadow-[4px_4px_0px_0px_#111827] lg:hover:bg-accent lg:hover:text-white active:bg-accent active:text-white transition-none group">
+                            <svg class="w-6 h-6 sm:w-7 sm:h-7 text-textMain lg:group-hover:text-white group-active:text-white" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                 <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" />
                             </svg>
                         </a>
@@ -95,16 +97,16 @@
             <h2 class="text-3xl sm:text-4xl font-bold mb-6 sm:mb-10 border-b-4 border-textMain pb-4">How Can I Help?</h2>
 
             <div class="flex flex-col md:flex-row gap-6 sm:gap-8 w-full">
-                <a href="websites.html" class="flex-1 bg-btnDark border-4 border-textMain px-5 py-6 sm:p-8 flex flex-col shadow-[4px_4px_0px_0px_#111827] lg:hover:bg-accent active:bg-accent transition-none group cursor-pointer">
-                    <h3 class="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 group-hover:text-textMain">Websites</h3>
-                    <p class="text-textMuted mb-6 sm:mb-8 flex-grow group-hover:text-textMain">Lightning-fast, custom-coded websites and landing pages built from scratch.</p>
-                    <span class="font-bold border-b-2 border-textMain pb-1 inline-block group-hover:border-textMain">View Details</span>
+                <a href="/en/websites" class="flex-1 bg-btnDark border-4 border-textMain px-5 py-6 sm:p-8 flex flex-col shadow-[4px_4px_0px_0px_#111827] lg:hover:bg-accent lg:hover:text-white active:bg-accent active:text-white transition-none group cursor-pointer">
+                    <h3 class="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 lg:group-hover:text-white group-active:text-white">Websites</h3>
+                    <p class="text-textMuted mb-6 sm:mb-8 flex-grow lg:group-hover:text-white group-active:text-white">Lightning-fast, custom-coded websites and landing pages built from scratch.</p>
+                    <span class="font-bold border-b-2 border-textMain pb-1 inline-block lg:group-hover:text-white lg:group-hover:border-white group-active:text-white group-active:border-white">View Details</span>
                 </a>
 
-                <a href="coding.html" class="flex-1 bg-btnDark border-4 border-textMain px-5 py-6 sm:p-8 flex flex-col shadow-[4px_4px_0px_0px_#111827] lg:hover:bg-accent active:bg-accent transition-none group cursor-pointer">
-                    <h3 class="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 group-hover:text-textMain">Data &amp; Automation</h3>
-                    <p class="text-textMuted mb-6 sm:mb-8 flex-grow group-hover:text-textMain">Writing custom scripts and programs, formatting databases, and cleaning CSV files.</p>
-                    <span class="font-bold border-b-2 border-textMain pb-1 inline-block group-hover:border-textMain">View Details</span>
+                <a href="/en/coding" class="flex-1 bg-btnDark border-4 border-textMain px-5 py-6 sm:p-8 flex flex-col shadow-[4px_4px_0px_0px_#111827] lg:hover:bg-accent lg:hover:text-white active:bg-accent active:text-white transition-none group cursor-pointer">
+                    <h3 class="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 lg:group-hover:text-white group-active:text-white">Data &amp; Automation</h3>
+                    <p class="text-textMuted mb-6 sm:mb-8 flex-grow lg:group-hover:text-white group-active:text-white">Writing custom scripts and programs, formatting databases, and cleaning CSV files.</p>
+                    <span class="font-bold border-b-2 border-textMain pb-1 inline-block lg:group-hover:text-white lg:group-hover:border-white group-active:text-white group-active:border-white">View Details</span>
                 </a>
             </div>
         </section>
@@ -191,22 +193,22 @@
                     </div>
 
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 w-full">
-                        <a href="tel:+48508506353" class="w-full h-full bg-btnDark border-4 border-textMain lg:hover:bg-accent active:bg-accent p-4 flex flex-col items-center justify-center transition-none shadow-[4px_4px_0px_0px_#111827]">
+                        <a href="tel:+48508506353" class="w-full h-full bg-btnDark border-4 border-textMain lg:hover:bg-accent lg:hover:text-white active:bg-accent active:text-white p-4 flex flex-col items-center justify-center transition-none shadow-[4px_4px_0px_0px_#111827]">
                             <span class="font-display text-lg sm:text-xl font-bold">Phone</span>
                             <span class="text-xs font-sans mt-1">Direct call</span>
                         </a>
 
-                        <button onclick="copyEmail()" class="w-full h-full bg-btnDark border-4 border-textMain lg:hover:bg-accent active:bg-accent p-4 flex flex-col items-center justify-center transition-none shadow-[4px_4px_0px_0px_#111827]">
+                        <button type="button" onclick="copyEmail()" class="w-full h-full bg-btnDark border-4 border-textMain lg:hover:bg-accent lg:hover:text-white active:bg-accent active:text-white p-4 flex flex-col items-center justify-center transition-none shadow-[4px_4px_0px_0px_#111827]">
                             <span class="font-display text-lg sm:text-xl font-bold">Email</span>
-                            <span id="email-grid-text" class="text-xs font-sans mt-1">Click to copy</span>
+                            <span id="email-grid-text" aria-live="polite" class="text-xs font-sans mt-1">Click to copy</span>
                         </button>
 
-                        <a href="https://useme.com/en/roles/contractor/jantokarzewski,704217/" target="_blank" rel="noopener noreferrer" class="w-full h-full sm:col-span-2 bg-btnDark border-4 border-textMain lg:hover:bg-accent active:bg-accent p-4 flex flex-col items-center justify-center transition-none shadow-[4px_4px_0px_0px_#111827]">
+                        <a href="https://useme.com/en/roles/contractor/jantokarzewski,704217/" target="_blank" rel="noopener noreferrer" class="w-full h-full sm:col-span-2 bg-btnDark border-4 border-textMain lg:hover:bg-accent lg:hover:text-white active:bg-accent active:text-white p-4 flex flex-col items-center justify-center transition-none shadow-[4px_4px_0px_0px_#111827]">
                             <span class="font-display text-lg sm:text-xl font-bold">Useme</span>
                             <span class="text-xs font-sans mt-1">B2B Invoice</span>
                         </a>
                     </div>
-                    <p class="mt-8 font-bold text-sm sm:text-base">I use these details only to reply to your message. More:  <a href="privacy-policy.html" class="lg:hover:text-accent active:text-accent transition-none">privacy policy</a>.</p>
+                    <p class="mt-8 font-bold text-sm sm:text-base">I use these details only to reply to your message. More:  <a href="/en/privacy-policy" class="lg:hover:text-accent active:text-accent transition-none">privacy policy</a>.</p>
                 </div>
             </div>
         </section>
@@ -214,8 +216,8 @@
     </main>
 
     <footer class="w-full py-8 text-center border-t-4 border-textMain bg-textMain text-background mt-auto">
-        <p class="font-bold text-sm sm:text-base">© 2026 Jan Tokarzewski<a href="cat.html" class="lg:hover:text-accent active:text-accent transition-none">.</a></p>
-        <a href="privacy-policy.html" class="text-xs sm:text-sm underline hover:opacity-80 transition-opacity">Privacy policy</a>
+        <p class="font-bold text-sm sm:text-base">© 2026 Jan Tokarzewski<a href="/en/cat" class="lg:hover:text-accent active:text-accent transition-none">.</a></p>
+        <a href="/en/privacy-policy" class="text-xs sm:text-sm underline hover:opacity-80 transition-opacity">Privacy policy</a>
     </footer>
 
     <script>
@@ -238,11 +240,14 @@
 
         const contactForm = document.getElementById('contact-form');
         const submitBtn = document.getElementById('submit-btn');
+        const defaultBtnText = submitBtn.textContent.trim();
+        let resetTimer = null;
 
         contactForm.addEventListener('submit', async function(e) {
             e.preventDefault();
 
-            const originalBtnText = submitBtn.textContent;
+            if (resetTimer) clearTimeout(resetTimer);
+            submitBtn.disabled = true;
             submitBtn.textContent = "Sending...";
 
             const formData = new FormData(contactForm);
@@ -262,12 +267,14 @@
                     submitBtn.classList.add('bg-textMain', 'text-white', 'pointer-events-none');
                     contactForm.reset();
                 } else {
+                    submitBtn.disabled = false;
                     submitBtn.textContent = "Error. Try again.";
-                    setTimeout(() => { submitBtn.textContent = originalBtnText; }, 3000);
+                    resetTimer = setTimeout(() => { submitBtn.textContent = defaultBtnText; }, 3000);
                 }
             } catch (error) {
+                submitBtn.disabled = false;
                 submitBtn.textContent = "Error. Try again.";
-                setTimeout(() => { submitBtn.textContent = originalBtnText; }, 3000);
+                resetTimer = setTimeout(() => { submitBtn.textContent = defaultBtnText; }, 3000);
             }
         });
     </script>

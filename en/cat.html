@@ -9,21 +9,22 @@
     <meta name="description" content="This is a picture of a cat">
     <meta name="robots" content="noindex">
 
+    <link rel="preload" href="/fonts/CascadiaCode.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="../css/style.css">
 
 </head>
 <body class="bg-background text-textMain font-sans antialiased flex flex-col min-h-screen overflow-x-hidden">
 
     <nav class="w-full py-4 px-4 sm:py-6 sm:px-12 flex justify-between items-center max-w-7xl mx-auto border-b-4 border-textMain bg-background sticky top-0 z-50 shadow-sm">
-        <a href="index.html" class="font-display text-xl sm:text-2xl font-bold lg:hover:bg-accent active:bg-accent px-2 transition-none whitespace-nowrap">Jan Tokarzewski</a>
+        <a href="/en/" class="font-display text-xl sm:text-2xl font-bold lg:hover:bg-accent lg:hover:text-white active:bg-accent active:text-white px-2 transition-none whitespace-nowrap">Jan Tokarzewski</a>
     </nav>
 
     <main class="flex-grow flex flex-col items-center justify-center w-full max-w-7xl mx-auto px-3 sm:px-6 py-12 sm:py-24">
         <h1 class="visually-hidden">Photo of a cat</h1>
         <div class="w-full bg-btnDark border-4 border-textMain px-4 py-8 sm:p-16 shadow-[4px_4px_0px_0px_#111827] sm:shadow-[8px_8px_0px_0px_#111827] text-center max-w-2xl mx-auto space-y-8">
-            <img src="../img/cat.webp" alt="Photo of a cat" class="w-full border-4 border-textMain object-cover">
+            <img src="../img/cat.webp" alt="Photo of a cat" width="1200" height="1200" decoding="async" class="w-full border-4 border-textMain object-cover">
             <div>
-                <a href="index.html" class="inline-block w-full sm:w-auto bg-btnDark border-4 border-textMain text-textMain px-8 py-4 font-bold text-base sm:text-lg shadow-[4px_4px_0px_0px_#111827] lg:hover:bg-accent active:bg-accent transition-none">
+                <a href="/en/" class="inline-block w-full sm:w-auto bg-btnDark border-4 border-textMain text-textMain px-8 py-4 font-bold text-base sm:text-lg shadow-[4px_4px_0px_0px_#111827] lg:hover:bg-accent lg:hover:text-white active:bg-accent active:text-white transition-none">
                     Home
                 </a>
             </div>
@@ -32,7 +33,7 @@
 
     <footer class="w-full py-8 text-center border-t-4 border-textMain bg-textMain text-background mt-auto">
         <p class="font-bold text-sm sm:text-base">© 2026 Jan Tokarzewski.</p>
-        <a href="privacy-policy.html" class="text-xs sm:text-sm underline hover:opacity-80 transition-opacity">Privacy policy</a>
+        <a href="/en/privacy-policy" class="text-xs sm:text-sm underline hover:opacity-80 transition-opacity">Privacy policy</a>
     </footer>
 
 </body>
