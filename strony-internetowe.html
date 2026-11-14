@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="pl" class="scroll-smooth scroll-pt-24">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jan Tokarzewski | Strony Internetowe</title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <meta name="description" content="Autorskie, błyskawiczne strony internetowe pisane od zera, bez WordPressa i gotowych szablonów. Strona za 499 zł z gwarancją min. 90 pkt w Lighthouse.">
+
+    <link rel="alternate" hreflang="pl" href="https://jantokarzewski.pl/strony-internetowe">
+    <link rel="alternate" hreflang="en" href="https://jantokarzewski.pl/en/websites">
+    <link rel="alternate" hreflang="x-default" href="https://jantokarzewski.pl/en/websites">
+
+    <link rel="canonical" href="https://jantokarzewski.pl/strony-internetowe">
+
+    <meta property="og:title" content="Jan Tokarzewski | Strony Internetowe">
+    <meta property="og:description" content="Autorskie, błyskawiczne strony internetowe pisane od zera, bez WordPressa i gotowych szablonów. Strona za 499 zł z gwarancją min. 90 pkt w Lighthouse.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jantokarzewski.pl/strony-internetowe">
+    <meta property="og:site_name" content="Jan Tokarzewski">
+    <meta property="og:locale" content="pl_PL">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:image" content="https://jantokarzewski.pl/img/pl/og-img-websites.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="2400">
+    <meta property="og:image:height" content="1260">
+    <meta property="og:image:alt" content="Strony internetowe – lekkie i responsywne strony internetowe. jantokarzewski.pl/strony-internetowe">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="preload" href="/fonts/CascadiaCode.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body class="bg-background text-textMain font-sans antialiased flex flex-col min-h-screen overflow-x-hidden">
+
+    <nav class="w-full py-4 px-4 sm:py-6 sm:px-12 flex justify-between items-center max-w-7xl mx-auto border-b-4 border-textMain bg-background sticky top-0 z-50 shadow-sm">
+      <a href="/" class="flex flex-col px-2 lg:hover:bg-accent lg:hover:text-white active:bg-accent active:text-white transition-none w-max">
+        <span class="font-display text-xl sm:text-2xl font-bold whitespace-nowrap">Jan Tokarzewski</span>
+        <span class="text-xs font-sans font-bold mt-0.5">Strona Główna</span>
+      </a>
+        <div class="font-bold text-lg hidden sm:block" style="margin-left:auto;margin-right:1rem">
+            Strony Internetowe
+        </div>
+        <a href="/en/websites" lang="en" hreflang="en" aria-label="English version" class="px-2 py-1 border-2 border-textMain text-sm font-bold bg-btnDark lg:hover:bg-accent lg:hover:text-white active:bg-accent active:text-white shadow-[2px_2px_0px_0px_#111827] transition-none ml-2">EN</a>
+    </nav>
+
+    <main class="flex-grow flex flex-col items-center w-full max-w-7xl mx-auto space-y-12 sm:space-y-20 px-3 sm:px-6 py-8 sm:py-12">
+
+        <section class="w-full bg-btnDark border-4 border-textMain px-4 py-8 sm:p-12 shadow-[4px_4px_0px_0px_#111827] sm:shadow-[8px_8px_0px_0px_#111827] text-center sm:text-left mt-2 sm:mt-10">
+            <h1 class="text-3xl sm:text-5xl lg:text-6xl font-bold uppercase tracking-tight mb-4 sm:mb-6">
+                Strony, które po prostu działają.
+            </h1>
+            <p class="text-base sm:text-xl text-textMuted leading-relaxed max-w-5xl mb-8">
+                Buduję szybkie, lekkie i nowoczesne strony, skrojone idealnie pod Twoje potrzeby.
+            </p>
+            <a href="#contact" class="inline-block bg-accent border-4 border-textMain text-white px-8 py-4 font-bold text-base sm:text-lg shadow-[4px_4px_0px_0px_#111827] lg:hover:bg-textMain lg:hover:text-white active:bg-textMain active:text-white transition-none w-full sm:w-auto text-center">
+                Napisz do mnie
+            </a>
+        </section>
+
+        <section id="work" class="w-full">
+            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-end mb-6 sm:mb-10 border-b-4 border-textMain pb-4 gap-4">
+                <h2 class="text-3xl sm:text-4xl font-bold">Projekty demonstracyjne</h2>
+
+                <div class="flex items-center gap-3">
+                    <span id="demo-counter" aria-live="polite" class="font-bold text-lg px-2">01 / 04</span>
+                    <button type="button" onclick="prevProject()" aria-label="Poprzedni projekt" class="w-12 h-12 flex justify-center items-center bg-btnDark border-4 border-textMain shadow-[4px_4px_0px_0px_#111827] lg:hover:bg-accent lg:hover:text-white active:bg-accent active:text-white active:translate-x-1 active:translate-y-1 transition-none font-bold text-xl cursor-pointer">
+                        ←
+                    </button>
+                    <button type="button" onclick="nextProject()" aria-label="Następny projekt" class="w-12 h-12 flex justify-center items-center bg-btnDark border-4 border-textMain shadow-[4px_4px_0px_0px_#111827] lg:hover:bg-accent lg:hover:text-white active:bg-accent active:text-white active:translate-x-1 active:translate-y-1 transition-none font-bold text-xl cursor-pointer">
+                        →
+                    </button>
+                </div>
+            </div>
+
+            <div class="bg-btnDark border-4 border-textMain p-4 sm:p-8 shadow-[4px_4px_0px_0px_#111827] sm:shadow-[8px_8px_0px_0px_#111827] flex flex-col lg:flex-row gap-6 sm:gap-8">
+                <div class="w-full lg:w-1/2 border-4 border-textMain overflow-hidden shadow-[4px_4px_0px_0px_#111827] bg-[#e5e7eb] flex items-center justify-center min-h-[200px] sm:min-h-[340px]">
+                    <img id="demo-img" src="img/pl/kwiaciarnia.webp" alt="Zrzut ekranu projektu: Kwiaciarnia „Zielony Zakątek”" width="3840" height="2160" decoding="async" class="w-full h-full object-cover">
+                </div>
+
+                <div class="w-full lg:w-1/2 flex flex-col justify-center text-left">
+                    <div id="demo-badge" class="inline-block bg-accent border-2 border-textMain px-3 py-1 font-bold text-white shadow-[2px_2px_0px_0px_#111827] uppercase tracking-wider w-max mb-4 text-sm sm:text-base">
+                        LOKALNY BIZNES
+                    </div>
+                    <h3 id="demo-title" class="text-2xl sm:text-3xl font-bold mb-4">Kwiaciarnia „Zielony Zakątek”</h3>
+                    <p id="demo-desc" class="text-base sm:text-lg text-textMuted leading-relaxed mb-8">
+                        Lekki landing page z wbudowanym formularzem zamówień na specjalne okazje. Przejrzysta galeria usług i zoptymalizowany interfejs mobilny.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 font-bold mt-auto w-full sm:w-auto">
+                        <a id="demo-live" href="https://demo.jantokarzewski.pl/kwiaciarnia" target="_blank" rel="noopener noreferrer" class="bg-accent border-4 border-textMain text-white px-6 py-3 shadow-[4px_4px_0px_0px_#111827] lg:hover:bg-textMain lg:hover:text-white active:bg-textMain active:text-white transition-none text-center">
+                            Zobacz na żywo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing" class="w-full">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-6 sm:mb-10 border-b-4 border-textMain pb-4">Cennik</h2>
+            <div class="bg-btnDark border-4 border-textMain p-6 sm:p-12 shadow-[4px_4px_0px_0px_#111827] sm:shadow-[8px_8px_0px_0px_#111827] text-textMain font-bold text-lg sm:text-2xl leading-relaxed">
+                Autorska strona internetowa kosztuje <span class="bg-accent border-4 border-textMain text-white px-2 sm:px-3 py-1 mx-1 shadow-[2px_2px_0px_0px_#111827] inline-block mb-1 sm:mb-0">499 ZŁ</span>. <br><br>
+                W tej cenie otrzymujesz projekt, napisanie kodu i gwarancję, że strona uzyska co najmniej 90 punktów w teście Google Lighthouse. Jeśli potrzebujesz czegoś większego, np. złożonego sklepu e-commerce lub potężnej aplikacji webowej, koszt zmieni się proporcjonalnie do zakresu prac. Skontaktuj się poniżej i daj znać, czego potrzebujesz.
+            </div>
+        </section>
+
+        <section id="faq" class="w-full">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-6 sm:mb-10 border-b-4 border-textMain pb-4">Najczęstsze pytania</h2>
+            <div class="faq flex flex-col gap-4">
+                <details class="faq-item">
+                    <summary>W czym tworzysz strony?</summary>
+                    <p class="text-textMuted text-base sm:text-lg leading-relaxed">Piszę je w HTML, JavaScript i Tailwind CSS, bez WordPressa i gotowych szablonów. Dzięki temu strony są lekkie i szybkie.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Czy potrzebuję hostingu i domeny?</summary>
+                    <p class="text-textMuted text-base sm:text-lg leading-relaxed">Tak, strona musi gdzieś działać i mieć adres. Domena i hosting nie są wliczone w cenę, ale pomogę Ci je wybrać i skonfigurować.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Ile trwa wykonanie strony?</summary>
+                    <p class="text-textMuted text-base sm:text-lg leading-relaxed">Zwykle około 2 tygodni, w zależności od zakresu.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Kto zmienia treść strony po wdrożeniu?</summary>
+                    <p class="text-textMuted text-base sm:text-lg leading-relaxed">Późniejsze zmiany treści wprowadzam na zlecenie.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Czy strona będzie dobrze wyglądać na telefonie?</summary>
+                    <p class="text-textMuted text-base sm:text-lg leading-relaxed">Tak. Każdą stronę projektuję tak, aby działała na telefonie, tablecie i komputerze, i sprawdzam ją na różnych szerokościach ekranu przed oddaniem.</p>
+                </details>
+            </div>
+        </section>
+
+        <!-- INFORMACJA DLA ODWIEDZAJĄCYCH (wyłączona).-->
+        <!--
+        <div class="notice w-full" role="status">
+            <span class="notice-tag">Informacja</span> Jestem na urlopie do [DATA]. Proszę nie dzwonić, tylko napisać przez formularz poniżej. Odpowiem po powrocie.
+        </div>
+        -->
+
+        <section id="contact" class="w-full bg-btnDark border-4 border-textMain px-4 py-8 sm:p-12 shadow-[4px_4px_0px_0px_#111827] sm:shadow-[8px_8px_0px_0px_#111827]">
+
+            <div class="mb-8 sm:mb-12">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4">Porozmawiajmy.</h2>
+                <p class="text-base sm:text-xl text-textMuted max-w-2xl">Opisz krótko, z czym mogę Ci pomóc. Możesz też skontaktować się ze mną w inny sposób.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 w-full">
+
+                <div class="flex flex-col w-full">
+                    <div class="bg-background border-4 border-textMain px-4 py-2 text-sm sm:text-base font-bold shadow-[4px_4px_0px_0px_#111827] flex items-center gap-3 w-max mb-8">
+                        <span class="w-3 h-3 flex-shrink-0 bg-accent border-2 border-textMain block"></span>
+                        <span>Wystawiam faktury VAT</span>
+                    </div>
+
+                    <form id="contact-form" action="https://formspree.io/f/xaenrkbe" method="POST" class="flex flex-col gap-4 w-full">
+                        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
+                        <input type="text" name="name" placeholder="Twoje imię, nazwisko lub nazwa firmy" aria-label="Twoje imię, nazwisko lub nazwa firmy" autocomplete="name" required class="w-full bg-background border-4 border-textMain p-4 font-bold outline-none focus:bg-white transition-none">
+                        <input type="email" name="email" placeholder="Adres e-mail" aria-label="Adres e-mail" autocomplete="email" required class="w-full bg-background border-4 border-textMain p-4 font-bold outline-none focus:bg-white transition-none">
+                        <textarea name="message" rows="4" placeholder="W czym mogę Ci dzisiaj pomóc?" aria-label="W czym mogę Ci dzisiaj pomóc?" required class="w-full bg-background border-4 border-textMain p-4 font-bold outline-none focus:bg-white transition-none resize-none"></textarea>
+                        <button id="submit-btn" aria-live="polite" type="submit" class="bg-accent border-4 border-textMain text-white font-bold text-lg px-8 py-4 shadow-[4px_4px_0px_0px_#111827] lg:hover:bg-textMain lg:hover:text-white active:bg-textMain active:text-white transition-none self-start w-full sm:w-auto mt-2">
+                            Wyślij wiadomość
+                        </button>
+                    </form>
+                </div>
+
+                <div class="flex flex-col w-full">
+                    <div class="font-display text-xl tracking-wide text-textMain uppercase mb-6 sm:mb-8 font-bold border-b-4 border-textMain pb-4">
+                        Inne sposoby kontaktu
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 w-full">
+                        <a href="tel:+48508506353" class="w-full h-full bg-btnDark border-4 border-textMain lg:hover:bg-accent lg:hover:text-white active:bg-accent active:text-white p-4 flex flex-col items-center justify-center transition-none shadow-[4px_4px_0px_0px_#111827]">
+                            <span class="font-display text-lg sm:text-xl font-bold">Telefon</span>
+                            <span class="text-xs font-sans mt-1">Zadzwoń bezpośrednio</span>
+                        </a>
+
+                        <button type="button" onclick="copyEmail()" class="w-full h-full bg-btnDark border-4 border-textMain lg:hover:bg-accent lg:hover:text-white active:bg-accent active:text-white p-4 flex flex-col items-center justify-center transition-none shadow-[4px_4px_0px_0px_#111827]">
+                            <span class="font-display text-lg sm:text-xl font-bold">E-mail</span>
+                            <span id="email-grid-text" aria-live="polite" class="text-xs font-sans mt-1">Kliknij, by skopiować</span>
+                        </button>
+
+                        <a href="https://useme.com/pl/roles/contractor/jantokarzewski,704217/" target="_blank" rel="noopener noreferrer" class="w-full h-full sm:col-span-2 bg-btnDark border-4 border-textMain lg:hover:bg-accent lg:hover:text-white active:bg-accent active:text-white p-4 flex flex-col items-center justify-center transition-none shadow-[4px_4px_0px_0px_#111827]">
+                            <span class="font-display text-lg sm:text-xl font-bold">Useme</span>
+                            <span class="text-xs font-sans mt-1">Rozliczenia B2B</span>
+                        </a>
+                    </div>
+                    <p class="mt-8 font-bold text-sm sm:text-base">Dane z formularza wykorzystam tylko do odpowiedzi na wiadomość. Szczegóły: <a href="/polityka-prywatnosci" class="lg:hover:text-accent active:text-accent transition-none">polityka prywatności</a>.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="w-full py-8 text-center border-t-4 border-textMain bg-textMain text-background mt-auto">
+        <p class="font-bold text-sm sm:text-base">© 2026 Jan Tokarzewski<a href="/kot" class="lg:hover:text-accent active:text-accent transition-none">.</a></p>
+        <a href="/polityka-prywatnosci" class="text-xs sm:text-sm underline hover:opacity-80 transition-opacity">Polityka prywatności</a>
+    </footer>
+
+    <script>
+        const projects = [
+            {
+                badge: "LOKALNY BIZNES",
+                title: "Kwiaciarnia „Zielony Zakątek”",
+                desc: "Lekki landing page z wbudowanym formularzem zamówień na specjalne okazje. Przejrzysta galeria usług i zoptymalizowany interfejs mobilny.",
+                img: "img/pl/kwiaciarnia.webp",
+                liveUrl: "https://demo.jantokarzewski.pl/kwiaciarnia"
+            },
+            {
+                badge: "SKLEP",
+                title: "„Pasieka u Włodka”",
+                desc: "Przytulny sklep internetowy oferujący naturalne miody. Ciepła kolorystyka, intuicyjny koszyk zakupowy i przyjazny, nowoczesny design.",
+                img: "img/pl/pasieka.webp",
+                liveUrl: "https://demo.jantokarzewski.pl/pasieka"
+            },
+            {
+                badge: "WARSZTAT",
+                title: "„AutoBieżnik”",
+                desc: "Profesjonalna wizytówka serwisu samochodowego z wbudowanym formularzem rezerwacji wizyt. Przejrzysty układ z czytelnym cennikiem i design budujący zaufanie.",
+                img: "img/pl/serwis.webp",
+                liveUrl: "https://demo.jantokarzewski.pl/serwis"
+            },
+            {
+                badge: "TRENER",
+                title: "Tomasz Bartczak - Ruch & Siła",
+                desc: "Dynamiczny landing page dla trenera personalnego i dietetyka. Zawiera przejrzystą ofertę z cennikiem pakietów, sekcję o mnie oraz formularz kontaktowy.",
+                img: "img/pl/trener.webp",
+                liveUrl: "https://demo.jantokarzewski.pl/trener"
+            }
+        ];
+
+        let currentIndex = 0;
+
+        window.addEventListener('load', () => {
+            projects.slice(1).forEach(p => {
+                const img = new Image();
+                img.src = p.img;
+            });
+        });
+
+        function updateSlide() {
+            const p = projects[currentIndex];
+            document.getElementById('demo-badge').textContent = p.badge;
+            document.getElementById('demo-title').textContent = p.title;
+            document.getElementById('demo-desc').textContent = p.desc;
+            document.getElementById('demo-img').src = p.img;
+            document.getElementById('demo-img').alt = 'Zrzut ekranu projektu: ' + p.title;
+            document.getElementById('demo-live').href = p.liveUrl;
+            document.getElementById('demo-counter').textContent = `0${currentIndex + 1} / 0${projects.length}`;
+        }
+
+        function nextProject() {
+            currentIndex = (currentIndex + 1) % projects.length;
+            updateSlide();
+        }
+
+        function prevProject() {
+            currentIndex = (currentIndex - 1 + projects.length) % projects.length;
+            updateSlide();
+        }
+
+        function copyEmail() {
+            const contactEmail = "dev@jantokarzewski.pl";
+
+            if (navigator.clipboard && window.isSecureContext) {
+                navigator.clipboard.writeText(contactEmail).then(() => {
+                    const textSpan = document.getElementById('email-grid-text');
+                    const originalText = textSpan.textContent;
+                    textSpan.textContent = "Skopiowano!";
+                    setTimeout(() => { textSpan.textContent = originalText; }, 2000);
+                }).catch(() => {
+                    window.location.href = `mailto:${contactEmail}`;
+                });
+            } else {
+                window.location.href = `mailto:${contactEmail}`;
+            }
+        }
+
+        const contactForm = document.getElementById('contact-form');
+        const submitBtn = document.getElementById('submit-btn');
+        const defaultBtnText = submitBtn.textContent.trim();
+        let resetTimer = null;
+
+        contactForm.addEventListener('submit', async function(e) {
+            e.preventDefault();
+
+            if (resetTimer) clearTimeout(resetTimer);
+            submitBtn.disabled = true;
+            submitBtn.textContent = "Wysyłanie...";
+
+            const formData = new FormData(contactForm);
+
+            try {
+                const response = await fetch(contactForm.action, {
+                    method: contactForm.method,
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+
+                if (response.ok) {
+                    submitBtn.textContent = "Wiadomość wysłana!";
+                    submitBtn.classList.remove('bg-accent', 'lg:hover:bg-textMain', 'lg:hover:text-white', 'active:bg-textMain', 'active:text-white');
+                    submitBtn.classList.add('bg-textMain', 'text-white', 'pointer-events-none');
+                    contactForm.reset();
+                } else {
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = "Błąd. Spróbuj ponownie.";
+                    resetTimer = setTimeout(() => { submitBtn.textContent = defaultBtnText; }, 3000);
+                }
+            } catch (error) {
+                submitBtn.disabled = false;
+                submitBtn.textContent = "Błąd. Spróbuj ponownie.";
+                resetTimer = setTimeout(() => { submitBtn.textContent = defaultBtnText; }, 3000);
+            }
+        });
+    </script>
+    <a href="#contact" id="fab" class="fab">Napisz do mnie</a>
+    <script>
+        (function () {
+            var b = document.getElementById('fab');
+            if (!b) return;
+            var far = false, seen = [];
+            function upd() { b.classList.toggle('is-hidden', !far || seen.length > 0); }
+            window.addEventListener('scroll', function () { far = window.scrollY > 400; upd(); }, { passive: true });
+            if ('IntersectionObserver' in window) {
+                var io = new IntersectionObserver(function (es) {
+                    es.forEach(function (e) {
+                        var i = seen.indexOf(e.target);
+                        if (e.isIntersecting && i < 0) seen.push(e.target);
+                        if (!e.isIntersecting && i >= 0) seen.splice(i, 1);
+                    });
+                    upd();
+                });
+                var c = document.getElementById('contact'), f = document.querySelector('footer');
+                if (c) io.observe(c);
+                if (f) io.observe(f);
+            }
+            upd();
+        })();
+    </script>
+</body>
+</html> 
+ 
+ 
+ 
